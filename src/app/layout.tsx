@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Zain,
+  Lora,
+  Plus_Jakarta_Sans,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,6 +15,18 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const zain = Zain({
+  weight: "800",
+  variable: "--font-zain",
+  subsets: ["latin"],
+});
+
+const pjs = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta-sans",
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -24,9 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${zain.variable} ${pjs.variable} antialiased`}>
         {children}
       </body>
     </html>
