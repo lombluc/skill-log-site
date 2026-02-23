@@ -1,22 +1,11 @@
 import Image from "next/image";
+import Footer from "../../components/Footer";
+import NavBar from "../../components/NavBar";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-brand-bg font-sans text-slate-900">
-      {/* Navigation */}
-      <nav className="flex items-center justify-between p-6 max-w-6xl mx-auto">
-        <div className="text-2xl font-bold bg-linear-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-          Skill Log
-        </div>
-        <div className="space-x-6 text-sm font-medium">
-          <a href="#features" className="hover:text-blue-600 transition">
-            Features
-          </a>
-          <a href="/privacy" className="hover:text-blue-600 transition">
-            Privacy
-          </a>
-        </div>
-      </nav>
+      <NavBar />
 
       {/* Hero Section */}
       <main className="max-w-6xl mx-auto px-6 pt-16 pb-24 text-center md:text-left md:flex items-center">
@@ -59,22 +48,7 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Footer / Legal */}
-      <footer className="border-t border-slate-200 bg-white py-12">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-slate-500 text-sm">
-            © 2026 Lucere Acuity Ltd. All rights reserved.
-          </p>
-          <div className="space-x-4 text-sm text-slate-400">
-            <a href="/privacy" className="hover:underline">
-              Privacy Policy
-            </a>
-            <a href="/terms" className="hover:underline">
-              Terms of Service
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
