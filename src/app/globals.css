@@ -3,11 +3,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brand-bg: #8EE0C7;
+  --night-bg: #282355;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand-bg: var(--brand-bg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
