@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
 import FeatureSection from "../../components/FeatureSection";
+import { motion } from "framer-motion";
 
 // productivity, habit tracker, skill tracker, XP app, todo, task
 
@@ -59,8 +62,13 @@ export default function Home() {
         </div>
 
         {/* Screenshot Container */}
-        <div className="md:w-1/2 mt-16 md:mt-0 flex justify-center">
-          <div className="relative w-72 h-145 bg-slate-900 rounded-[3rem] p-3 shadow-2xl border-4 border-slate-900">
+        <motion.div
+          initial={{ x: 200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="md:w-1/2 mt-16 md:mt-0 flex justify-center"
+        >
+          <div className="relative w-72 h-145 bg-slate-900 rounded-[3rem] p-3 shadow-2xl border-4 border-slate-900 transition-transform duration-500 ease-[--ease-spring] hover:scale-105 active:scale-95">
             {/* The actual image */}
             <div className="relative w-full h-full overflow-hidden rounded-4xl bg-transparent">
               <Image
@@ -75,7 +83,7 @@ export default function Home() {
             {/* Visual "Speaker" and "Camera" holes for realism */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-slate-900 rounded-b-3xl"></div>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       <section id="features" className="py-24 space-y-24">
