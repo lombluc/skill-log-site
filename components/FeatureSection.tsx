@@ -25,10 +25,10 @@ export default function FeatureSection({ index, maxIndex, feature }: Props) {
       >
         {/* Text Content */}
         <div className="md:w-1/2 space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold transition-transform duration-500 ease-[--ease-spring] hover:scale-102 active:scale-95">
+          <h2 className="text-3xl md:text-4xl font-bold transition-transform duration-500 ease-[--ease-spring] hover:scale-102 active:scale-95 text-slate-900">
             {feature.title}
           </h2>
-          <p className="text-base text-slate-600 leading-relaxed font-description">
+          <p className="text-base text-text-color leading-relaxed font-description">
             {feature.description}
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function FeatureSection({ index, maxIndex, feature }: Props) {
           // 'viewport' ensures it only happens once and triggers when 20% visible
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="md:w-1/2 w-full transition-transform duration-500 ease-[--ease-spring] hover:scale-105 active:scale-95"
+          className="md:w-1/2 w-full transition-transform duration-500 hover:scale-105 active:scale-95"
         >
           <div className="aspect-video relative">
             <Image
@@ -55,7 +55,7 @@ export default function FeatureSection({ index, maxIndex, feature }: Props) {
       </div>
       {index < maxIndex - 1 && (
         <div className="max-w-4xl mx-auto px-6 mt-24">
-          <hr className="border-slate-100" />
+          <hr className="border-slate-50" />
         </div>
       )}
     </div>

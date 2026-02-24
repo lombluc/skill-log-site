@@ -37,13 +37,13 @@ const features = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-brand-bg font-sans text-slate-900">
+    <div className="min-h-screen bg-cloud font-sans text-text-color">
       <NavBar />
 
       {/* Hero Section */}
       <section className="min-h-screen max-w-6xl mx-auto px-6 pt-16 pb-24 text-center md:text-left md:flex items-center">
         <div className="md:w-1/2 space-y-6">
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight transition-transform duration-500 ease-[--ease-spring] hover:scale-102 active:scale-95">
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight transition-transform duration-500 ease-[--ease-spring] hover:scale-102 active:scale-95 text-slate-900">
             Level Up Your{" "}
             <span className="text-blue-600">Real-World Skills</span>
           </h1>
@@ -85,6 +85,9 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
+      <div className="max-w-6xl mx-auto px-6 mt-24">
+        <hr className="border-slate-50" />
+      </div>
 
       <section id="features" className="py-24 space-y-24">
         {features.map((feature, index) =>

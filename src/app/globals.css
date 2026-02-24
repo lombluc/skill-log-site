@@ -5,12 +5,21 @@
   --foreground: #171717;
   --brand-bg: #8EE0C7;
   --night-bg: #282355;
+  --cloud: #FFE7B5;
+  --cloud-highlight: #FED09C;
+  --text-color: #4e4133;
+  --text-muted-color: #968F73;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-brand-bg: var(--brand-bg);
+  --color-cloud: var(--cloud);
+  --color-cloud-highlight: var(--cloud-highlight);
+  --color-text-color: var(--text-color);
+  --color-text-muted-color: var(--text-muted-color);
+
   --font-sans: var(--font-zain);
   --font-description: var(--font-plus-jakarta-sans);
 
