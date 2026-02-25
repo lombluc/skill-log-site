@@ -1,13 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Footer from "../../components/Footer";
-import NavBar from "../../components/NavBar";
 import FeatureSection from "../../components/FeatureSection";
 import { motion } from "framer-motion";
 import BasePage from "../../components/BasePage";
-
-// productivity, habit tracker, skill tracker, XP app, todo, task
+import Link from "next/link";
 
 const features = [
   {
@@ -50,13 +47,35 @@ export default function Home() {
             Gamify your routine. Earn XP for focused work, track progress, and
             build your own skills. Start your first quest now.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
-            <button className="px-8 py-4 bg-black text-white rounded-2xl font-semibold hover:bg-slate-800 transition shadow-lg">
-              Download for iOS
-            </button>
-            <button className="px-8 py-4 bg-white border border-slate-200 rounded-2xl font-semibold hover:border-blue-400 transition shadow-sm">
-              Get it on Android
-            </button>
+          <div className="flex flex-col sm:flex-row gap-8 pt-4 justify-center md:justify-center">
+            {/* App Store Button */}
+            <Link
+              href=""
+              target="_blank"
+              className="hover:scale-105 active:scale-95 transition-transform duration-400"
+            >
+              <Image
+                src="/svg/app-store-button.svg"
+                alt="Download on the App Store"
+                width={180}
+                height={60}
+                priority
+              />
+            </Link>
+
+            {/* Google Play Button */}
+            <Link
+              href=""
+              target="_blank"
+              className="hover:scale-105 active:scale-95 transition-transform duration-400"
+            >
+              <Image
+                src="/svg/google-play-button.svg"
+                alt="Get it on Google Play"
+                width={203}
+                height={60}
+              />
+            </Link>
           </div>
         </div>
 
