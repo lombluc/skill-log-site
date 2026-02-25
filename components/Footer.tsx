@@ -9,6 +9,9 @@ export default function Footer() {
           <a href="/privacy" className="hover:underline">
             Privacy Policy
           </a>
+          <a href="/contact" className="hover:underline">
+            Contact Us
+          </a>
           <a href="/terms" className="hover:underline">
             Terms of Service
           </a>

@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
 import FeatureSection from "../../components/FeatureSection";
 import { motion } from "framer-motion";
+import BasePage from "../../components/BasePage";
 
 // productivity, habit tracker, skill tracker, XP app, todo, task
 
@@ -37,9 +38,7 @@ const features = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-cloud font-sans text-text-color">
-      <NavBar />
-
+    <BasePage>
       {/* Hero Section */}
       <section className="min-h-screen max-w-6xl mx-auto px-6 pt-16 pb-24 text-center md:text-left md:flex items-center">
         <div className="md:w-1/2 space-y-6">
@@ -65,7 +64,7 @@ export default function Home() {
         <motion.div
           initial={{ x: 200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 0.75, ease: "easeOut" }}
           className="md:w-1/2 mt-16 md:mt-0 flex justify-center"
         >
           <div className="relative w-72 h-145 bg-slate-900 rounded-[3rem] p-3 shadow-2xl border-4 border-slate-900 transition-transform duration-500 ease-[--ease-spring] hover:scale-105 active:scale-95">
@@ -94,8 +93,6 @@ export default function Home() {
           FeatureSection({ index, maxIndex: features.length, feature }),
         )}
       </section>
-
-      <Footer />
-    </div>
+    </BasePage>
   );
 }
