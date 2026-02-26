@@ -9,6 +9,8 @@
   --cloud-highlight: #FED09C;
   --text-color: #4e4133;
   --text-muted-color: #968F73;
+  --sb-bg: #f3e0c5;
+  --sb-scroll: #fac043;
 }
 
 @theme inline {
@@ -19,6 +21,8 @@
   --color-cloud-highlight: var(--cloud-highlight);
   --color-text-color: var(--text-color);
   --color-text-muted-color: var(--text-muted-color);
+  --color-sb-bg: var(--sb-bg);
+  --color-sb-scroll: var(--sb-scroll);
 
   --font-sans: var(--font-zain);
   --font-description: var(--font-plus-jakarta-sans);
@@ -41,4 +45,27 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+@layer base {
+  /* 1. Global Styles for Chrome, Edge, and Safari */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-sb-scroll rounded-full border-3 border-sb-bg;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-amber-900;
+  }
+
+  /* 2. Global Styles for Firefox */
+  * {
+    /* scrollbar-color: [Thumb Color] [Track Color] */
+    scrollbar-color: theme('colors.sb-scroll') theme('colors.sb-bg');
+    scrollbar-width: thin; /* Options: auto, thin, none */
+  }
 }
