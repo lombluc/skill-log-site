@@ -2,7 +2,7 @@
 
 **Effective Date:** March 3, 2026
 
-This Privacy Policy describes how Lucere Acuity Ltd ("we", "us", or "our") collects, uses, and shares your personal information when you use the Skill Log mobile application (the "App"). The App is currently provided as a **free** service.
+This Privacy Policy describes how My Company Ltd ("we", "us", or "our") collects, uses, and shares your personal information when you use the My App mobile application (the "App") or visit our website at yourwebsite.com (the "Site"). The App is currently provided as a **free** service.
 
 ---
 
@@ -28,6 +28,15 @@ We offer **Firebase Crashlytics** as an optional, opt-in feature to help monitor
 * **Stack traces** — technical details about where the code failed
 
 This data is **pseudonymised** and is not intentionally linked to your name or email in our crash reporting dashboard. Under GDPR, a Firebase Installation UUID is still considered personal data; we process it on the basis of our legitimate interest in maintaining app stability.
+
+#### Local Storage (On-Device)
+The App stores a small amount of data directly on your device, including:
+
+* Authentication tokens — to keep you securely logged in without requiring you to re-enter your credentials each session
+* App settings and preferences — such as your chosen display options
+* App data — used for the main function of the App
+
+This data is stored only on your device and is not transmitted to us except as described elsewhere in this Policy. It is cleared when you delete your account, but is not cleared on logout.
 
 ### Information We Do NOT Collect
 
@@ -82,6 +91,18 @@ Once a deletion request is processed, your account data will be permanently remo
 
 We use **Supabase** for database management, which employs industry-standard encryption (AES-256 at rest, TLS in transit) and security protocols. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security. We will notify you of any data breach as required by applicable law.
 
+## 5a. Website
+
+### Contact Form
+When you submit a message via the contact form on the Site, we collect your **email address** and the **content of your message**. This information is used solely to respond to your enquiry and is not added to any mailing list or used for marketing purposes without your separate consent.
+
+We retain contact form submissions for up to **12 months**, after which they are deleted. The legal basis for this processing is our legitimate interest in responding to enquiries.
+
+### Website Cookies
+The Site uses only **strictly necessary cookies** — small text files placed on your device that are essential for the Site to function. These include session and security tokens used to protect the contact form from abuse (e.g. CSRF protection). These cookies do not track you and do not require your consent under UK/EU GDPR.
+
+We do not currently use analytics, advertising, or tracking cookies on the Site.
+
 ---
 
 ## 6. Children's Privacy
@@ -133,3 +154,5 @@ We may update this Privacy Policy from time to time. We will notify you of mater
 If you have any questions, requests, or complaints about this Privacy Policy or how we handle your data, please contact us at:
 
 **Email:** privacy@yourcompany.com
+
+This Privacy Policy covers both the My App mobile application and the My Company website. If your enquiry relates specifically to the website contact form, the same email address applies.
