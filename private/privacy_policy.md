@@ -1,69 +1,137 @@
-# Privacy Policy for Skill Log
+# Privacy Policy for My App
 
 **Effective Date:** March 3, 2026
 
-This Privacy Policy describes how Lucere Acuity Ltd ("we", "us", or "our") collects, uses, and shares your personal information when you use the Skill Log mobile application (the "App"). The App is provided as a **Free** service.
+This Privacy Policy describes how Lucere Acuity Ltd ("we", "us", or "our") collects, uses, and shares your personal information when you use the Skill Log mobile application (the "App"). The App is currently provided as a **free** service.
+
+---
 
 ## 1. Information We Collect
 
-We believe in transparency. Depending on your interactions with the App, we may collect:
+We collect a minimal amount of data necessary to provide the App's features.
 
+### Personal Information
 
-### Location Information
-This App does not collect precise GPS location data.
+When you sign up using **Google Sign-In** or **Sign in with Apple**, we collect:
 
-### Usage & Diagnostic Data
-We collect information on how you interact with the App, including crash logs and performance metrics, to help us identify and fix technical issues.
+* **Name** (as provided by the authentication provider)
+* **Email Address**
 
+This information is used solely to create and manage your user account.
 
+### Usage & Diagnostic Data (Firebase Crashlytics)
 
-### Personally Identifiable Information
+We offer **Firebase Crashlytics** as an optional, opt-in feature to help monitor App stability. It is **disabled by default**, and you can enable or disable it at any time in the App's settings. When enabled and the App crashes or encounters a significant error, it sends a report to us.This data includes:
 
-For a better experience, while using the App, we may require you to provide us with certain personally identifiable information, including but not limited to: Name, Email. The information that we request will be retained by us and used as described in this privacy policy.
+* **Device type and OS version** (e.g., iPhone 15, Android 14)
+* **Firebase Installation UUID** — a randomised, pseudonymous ID used to count distinct affected devices, not to identify you personally
+* **Stack traces** — technical details about where the code failed
+
+This data is **pseudonymised** and is not intentionally linked to your name or email in our crash reporting dashboard. Under GDPR, a Firebase Installation UUID is still considered personal data; we process it on the basis of our legitimate interest in maintaining app stability.
+
+### Information We Do NOT Collect
+
+* We do **not** collect precise GPS location data.
+* We do **not** access your contacts, photos, or camera unless explicitly requested for a specific feature.
+* We do **not** currently display advertisements. If we introduce advertising in the future, we will update this Policy and, where required by law, seek your consent before any ad-related tracking begins.
+
+---
 
 ## 2. How We Use Your Information
 
-We use the information we collect to:
-- Provide, maintain, and improve the App's functionality.
-- Monitor usage patterns to enhance user experience.
-- Detect and prevent fraudulent or technical security issues.
+| Purpose | Data Used | Legal Basis (GDPR) |
+|---|---|---|
+| Authenticating users and maintaining your account | Name, email | Performance of a contract |
+| Fixing bugs and improving performance | Crashlytics data | Legitimate interests |
+| Sending essential account-related notifications | Email | Performance of a contract |
 
-## 3. Data Sharing & Third Parties
+---
 
-We do not sell your personal data. We only share information with third parties in the following circumstances:
-- **No Advertising:** We do not share your data with third-party advertisers.
-- **Service Providers:** We use reputable analytics providers to help us understand App performance.
-- **Legal Compliance:** We may disclose information if required to do so by law or in response to valid requests by public authorities.
+## 3. Third-Party Service Providers
 
-### Third-Party Services
+We do not sell your personal data. We share information with the following providers only to the extent necessary for the App to function:
 
-Please note that the App utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the App:
+| Provider | Purpose | Privacy Policy |
+|---|---|---|
+| **Google Sign-In / Firebase** | Authentication and crash reporting | [policies.google.com/privacy](https://policies.google.com/privacy) |
+| **Sign in with Apple** | Authentication | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
+| **Supabase** | Database storage (hosted in the European Union (Sweden)) | [supabase.com/privacy](https://supabase.com/privacy) |
 
-- [Supabase](https://supabase.com/privacy)
-- [Google Sign-In](https://policies.google.com/privacy)
-- [Sign in with Apple](https://www.apple.com/legal/privacy/)
-- [Firebase Crashlytics](https://firebase.google.com/support/privacy/)
+### International Data Transfers
 
-## 4. Children's Privacy
+Our primary database provider, Supabase, stores data on Amazon Web Services infrastructure located in the United States. If you are located in the European Economic Area (EEA) or the United Kingdom, your data is transferred to the US under appropriate safeguards, including Standard Contractual Clauses (SCCs) as approved by the European Commission and UK Information Commissioner's Office (ICO). By using the App, you acknowledge this transfer.
 
-The App is not intended for children under the age of 13+. We do not knowingly collect personal information from children. If we become aware that we have collected information from a child without parental consent, we will take steps to remove that information.
+---
 
-## 5. Security & Retention
+## 4. Data Retention & Account Deletion
 
-We implement industry-standard security measures to protect your data. However, please be aware that no security system is impenetrable. We retain your information for as long as necessary to fulfill the purposes outlined in this policy.
+We retain your personal information for as long as your account is active.
 
-## 6. Your Rights (GDPR/CCPA)
+**How to delete your account and data:**
 
-Depending on your jurisdiction, you may have the right to:
-- Access the personal information we hold about you.
-- Request the correction or deletion of your data.
-- Object to certain types of processing.
+Under App Store and Google Play regulations, you have the right to delete your account and associated data at any time. You can do this by:
 
-## 7. Governing Law
+1. Navigating to **Settings** within the App and selecting **"Delete Account."**
+2. Alternatively, emailing us at **privacy@yourcompany.com** with the subject line "Data Deletion Request."
 
-This Privacy Policy is governed by the laws of US.
+Once a deletion request is processed, your account data will be permanently removed from our active databases (Supabase) within **30 days**. Anonymised or aggregated data that cannot reasonably be used to identify you may be retained.
 
-## 8. Contact Information
+---
 
-If you have any questions about this Privacy Policy, please contact us at:
-**Email:** skill.log@gmail.com
+## 5. Security
+
+We use **Supabase** for database management, which employs industry-standard encryption (AES-256 at rest, TLS in transit) and security protocols. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security. We will notify you of any data breach as required by applicable law.
+
+---
+
+## 6. Children's Privacy
+
+The App is not directed to children. The minimum age to use the App is **13 years old**, or the higher minimum age required in your jurisdiction (for example, 16 in certain EU member states). We do not knowingly collect personal information from anyone below the applicable minimum age. If we discover that we have collected data from an underage user, we will delete it promptly.
+
+If you are a parent or guardian and believe your child has provided us with personal data, please contact us at **privacy@yourcompany.com**.
+
+---
+
+## 7. Your Privacy Rights
+
+Depending on where you live, you may have the following rights regarding your personal data. To exercise any of these rights, email us at **privacy@yourcompany.com**.
+
+### For EEA and UK residents (GDPR / UK GDPR)
+
+* **Access:** Request a copy of the personal data we hold about you.
+* **Rectification:** Request that we correct inaccurate data.
+* **Erasure:** Request that we delete your data ("right to be forgotten").
+* **Data portability:** Request your data in a structured, machine-readable format.
+* **Restriction:** Request that we restrict how we process your data.
+* **Objection:** Object to processing based on legitimate interests.
+* **Withdraw consent:** Where processing is based on consent, withdraw it at any time without affecting prior processing.
+
+You also have the right to lodge a complaint with your local supervisory authority (e.g., the UK ICO at [ico.org.uk](https://ico.org.uk) or your national EU Data Protection Authority).
+
+### For California residents (CCPA/CPRA)
+
+* **Know:** Request disclosure of the categories and specific pieces of personal information we have collected about you.
+* **Delete:** Request deletion of your personal information.
+* **Correct:** Request correction of inaccurate personal information.
+* **Opt out of sale/sharing:** We do not currently sell or share personal information for cross-context behavioural advertising. If this changes in connection with future advertising features, we will provide a "Do Not Sell or Share My Personal Information" mechanism.
+* **Non-discrimination:** We will not discriminate against you for exercising your CCPA rights.
+
+### For all other users
+
+Regardless of your location, you may contact us at any time to request access to, correction of, or deletion of your data.
+
+---
+
+## 8. Changes to This Policy
+
+We may update this Privacy Policy from time to time. We will notify you of material changes by posting the updated Policy within the App or by email, and we will update the "Effective Date" at the top. We encourage you to review this Policy periodically.
+
+---
+
+## 9. Contact Us
+
+If you have any questions, requests, or complaints about this Privacy Policy or how we handle your data, please contact us at:
+
+**Email:** privacy@yourcompany.com
+
+If you are located in the EU or UK and we are unable to resolve your concern, you have the right to contact your local Data Protection Authority.
