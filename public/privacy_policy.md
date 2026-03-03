@@ -133,5 +133,3 @@ We may update this Privacy Policy from time to time. We will notify you of mater
 If you have any questions, requests, or complaints about this Privacy Policy or how we handle your data, please contact us at:
 
 **Email:** privacy@yourcompany.com
-
-If you are located in the EU or UK and we are unable to resolve your concern, you have the right to contact your local Data Protection Authority.
