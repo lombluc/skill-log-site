@@ -9,6 +9,9 @@ export async function sendEmail(formData: FormData) {
   const email = formData.get("email") as string;
   const message = formData.get("message") as string;
 
+  if (message.length > 500 || email.length > 100)
+    return { success: false, error: "Message over 500 characters" };
+
   try {
     await resend.emails.send({
       from: `Contact Form <${fromEmail}>`, // Resend provides this for testing

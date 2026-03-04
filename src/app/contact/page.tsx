@@ -22,6 +22,7 @@ export default function ContactPage() {
                 name="email"
                 type="email"
                 required
+                maxLength={100}
                 className="w-full font-description mt-1 p-2 border rounded-md focus:ring-2 focus:ring-blue-500 outline-none"
                 placeholder="you@example.com"
               />
@@ -33,6 +34,7 @@ export default function ContactPage() {
                 name="message"
                 required
                 rows={4}
+                maxLength={500}
                 className="w-full font-description mt-1 p-2 border rounded-md focus:ring-2 focus:ring-blue-500 outline-none"
                 placeholder="How can we help?"
               />

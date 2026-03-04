@@ -17,12 +17,12 @@ We collect a minimal amount of data necessary to provide the App's features.
 
 ### 1.1 Personal Information
 
-When you sign up using **Google Sign-In** or **Sign in with Apple**, we collect:
+When you create an account, you can authenticate using **Google Sign-In**, **Sign in with Apple**, or directly via **Email**. Depending on your chosen method, we collect:
 
-- **Name** (as provided by the authentication provider)
 - **Email Address**
+- **Name**
 
-This information is used solely to create and manage your user account.
+This information is used solely to create and manage your user account. *Note: If you choose to sign up using an email and password, your password is securely hashed and managed by our authentication provider (Supabase). We do not collect, see, or store your plain-text password.*
 
 ### 1.2 Usage & Diagnostic Data (Firebase Crashlytics)
 
@@ -99,7 +99,7 @@ We do not sell your personal data. We share information with the following provi
 |---|---|---|
 | **Google Sign-In / Firebase** | Authentication and crash reporting | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | **Sign in with Apple** | Authentication | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
-| **Supabase** | Database storage (primary region: EU — Sweden) | [supabase.com/privacy](https://supabase.com/privacy) |
+| **Supabase** | Authentication and database storage (primary region: EU — Sweden) | [supabase.com/privacy](https://supabase.com/privacy) |
 | **Expo** | App framework and over-the-air updates | [expo.dev/privacy](https://expo.dev/privacy) |
 
 ### 3.1 International Data Transfers
