@@ -70,6 +70,7 @@ If you grant permission, the App may send you push notifications (for example, s
 | Sending essential account-related notifications | Email | Performance of a contract |
 | Delivering push notifications (if enabled) | Push token | Consent |
 | Delivering App updates | Device info via Expo | Legitimate interests |
+| Sending account-related emails (welcome email, verification, contact form replies) | Email | Performance of a contract / Legitimate Interests |
 
 ### 2.1 Future: Advertising (Free Tier)
 
@@ -101,6 +102,7 @@ We do not sell your personal data. We share information with the following provi
 | **Sign in with Apple** | Authentication | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | **Supabase** | Authentication and database storage (primary region: EU — Sweden) | [supabase.com/privacy](https://supabase.com/privacy) |
 | **Expo** | App framework and over-the-air updates | [expo.dev/privacy](https://expo.dev/privacy) |
+| Amazon SES (AWS) | Delivery of transactional emails (welcome email, verification, contact form) | [aws.amazon.com/privacy](aws.amazon.com/privacy) |
 
 ### 3.1 International Data Transfers
 
@@ -143,7 +145,7 @@ No method of transmission over the internet is 100% secure, and we cannot guaran
 
 ### 6.1 Contact Form
 
-When you submit a message via the contact form on the Site, we collect your **email address** and the **content of your message**. This information is used solely to respond to your enquiry and is not added to any mailing list or used for marketing purposes without your separate consent.
+When you submit a message via the contact form on the Site, we collect your **email address** and the **content of your message**. We use Amazon SES to process and deliver these messages to our team. This information is used solely to respond to your enquiry and is not added to any mailing list or used for marketing purposes without your separate consent.
 
 We retain contact form submissions for up to **12 months**, after which they are deleted. The legal basis for this processing is our legitimate interest in responding to enquiries.
 
