@@ -1,8 +1,13 @@
 "use client";
+import { Turnstile } from "@marsidev/react-turnstile";
 import BasePage from "../../../components/BasePage";
 import { sendEmail } from "../actions";
+import { useState } from "react";
+import { useFormStatus } from "react-dom";
 
 export default function ContactPage() {
+  const [token, setToken] = useState("");
+
   return (
     <BasePage>
       <div className="min-h-screen">
@@ -12,7 +17,9 @@ export default function ContactPage() {
           <form
             action={async (formData) => {
               const res = await sendEmail(formData);
-              if (res.success) alert("Message sent!");
+              if (res.success) {
+                alert("Message sent!");
+              }
             }}
             className="flex flex-col gap-4"
           >
@@ -27,7 +34,6 @@ export default function ContactPage() {
                 placeholder="you@example.com"
               />
             </div>
-
             <div>
               <label className="block text-sm text-slate-700">Message</label>
               <textarea
@@ -39,16 +45,34 @@ export default function ContactPage() {
                 placeholder="How can we help?"
               />
             </div>
-
-            <button
-              type="submit"
-              className="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 hover:tracking-wider active:tracking-tighter transition-all duration-300 cursor-pointer"
-            >
-              Send Message
-            </button>
+            <input type="hidden" name="token" value={token} />
+            <div className="my-2  self-center">
+              <Turnstile
+                siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+                onSuccess={(token) => {
+                  console.log("token found?");
+                  setToken(token);
+                }}
+              />
+            </div>
+            <SubmitButton token={token} />
           </form>
         </div>
       </div>
     </BasePage>
+  );
+}
+
+function SubmitButton({ token }: { token: string }) {
+  const { pending } = useFormStatus();
+
+  return (
+    <button
+      type="submit"
+      disabled={!token || pending}
+      className="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 disabled:bg-slate-400 transition-all cursor-pointer"
+    >
+      {pending ? "Sending..." : "Send Message"}
+    </button>
   );
 }
