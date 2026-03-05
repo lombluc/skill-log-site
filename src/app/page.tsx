@@ -34,9 +34,15 @@ const features = [
 ];
 
 export default function Home() {
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // This creates that premium, gliding feel
+    });
+  };
+
   return (
     <BasePage>
-      {/* Hero Section */}
       <section className="min-h-screen max-w-6xl mx-auto px-6 pt-16 pb-24 text-center md:text-left md:flex items-center">
         <div className="md:w-1/2 space-y-6">
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight transition-transform duration-500 ease-[--ease-spring] hover:scale-102 active:scale-95 text-slate-900">
@@ -87,18 +93,16 @@ export default function Home() {
           className="md:w-1/2 mt-16 md:mt-0 flex justify-center"
         >
           <div className="relative w-72 h-145 bg-slate-900 rounded-[3rem] p-3 shadow-2xl border-4 border-slate-900 transition-transform duration-500 ease-[--ease-spring] hover:scale-105 active:scale-95">
-            {/* The actual image */}
             <div className="relative w-full h-full overflow-hidden rounded-4xl bg-transparent">
               <Image
                 src="/images/screenshot.jpg"
                 alt="App Screenshot"
                 fill
                 className="object-cover"
-                priority // This ensures the hero image loads instantly
+                priority
               />
             </div>
 
-            {/* Visual "Speaker" and "Camera" holes for realism */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-slate-900 rounded-b-3xl"></div>
           </div>
         </motion.div>
@@ -111,6 +115,41 @@ export default function Home() {
         {features.map((feature, index) =>
           FeatureSection({ index, maxIndex: features.length, feature }),
         )}
+      </section>
+      <div className="max-w-6xl mx-auto px-6 mt-24 pb-16">
+        <hr className="border-slate-50" />
+      </div>
+
+      <section className="max-w-6xl mx-auto px-6 pt-16 pb-24 mb-16 text-center md:text-left md:flex items-center">
+        <div className="md:w-1/2 space-y-6">
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight transition-transform duration-500 ease-[--ease-spring] hover:scale-102 active:scale-95 text-slate-900">
+            Start Your <span className="text-blue-600">Journey Now</span>
+          </h1>
+          <p className="text-base text-slate-600 max-w-lg font-description">
+            Gain XP in your own skills by working on your real-life tasks.
+          </p>
+        </div>
+        <div className="md:w-1/2 mt-16 md:mt-0 flex justify-center">
+          <button
+            onClick={handleScrollToTop}
+            className="
+        group relative flex items-center justify-center
+        w-full max-w-sm h-20 md:h-28
+        bg-slate-900 rounded-full p-1
+        shadow-[0_20px_50px_rgba(172,112,70,0.7)] 
+        border-4 border-slate-800
+        transition-all duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)]
+        hover:scale-102 hover:bg-slate-850 active:scale-95
+      "
+          >
+            {/* Subtle Inner Glow */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+
+            <span className="relative text-3xl md:text-5xl font-black tracking-tighter text-slate-100 uppercase">
+              Start Now
+            </span>
+          </button>
+        </div>
       </section>
     </BasePage>
   );
