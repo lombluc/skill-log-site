@@ -2,13 +2,13 @@
 
 **Last Updated:** March 3, 2026
 
-These Terms of Use ("Terms") constitute a legally binding agreement between you and My Company Ltd ("we," "us," or "our") regarding your use of the My App mobile application (the "App"). 
+These Terms of Use ("Terms") constitute a legally binding agreement between you and Lucere Acuity Ltd ("we," "us," or "our") regarding your use of the Skill Log mobile application (the "App"). 
 
 Please read these Terms carefully. By downloading, accessing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, you must immediately stop using the App.
 
 ## 1. Description of Service
 
-My App is a gamified productivity application that allows users to set skills and quests, create linked tasks, and track their progress. The App is currently provided as a free service. We reserve the right to introduce advertisements or paid subscription tiers in the future. Any future paid features will be clearly communicated and may be subject to supplemental terms.
+Skill Log is a gamified productivity application that allows users to set skills and quests, create linked tasks, and track their progress. The App is currently provided as a free service. We reserve the right to introduce advertisements or paid subscription tiers in the future. Any future paid features will be clearly communicated and may be subject to supplemental terms.
 
 ## 2. Eligibility
 
@@ -47,11 +47,11 @@ Your privacy is important to us. Our collection and use of personal data—inclu
 
 ## 8. Intellectual Property
 
-The App, including its original code, design, text, graphics, gamification mechanics, features, and functionality (excluding User Content), is the exclusive property of My Company Ltd and its licensors. It is protected by international copyright, trademark, and other intellectual property laws.
+The App, including its original code, design, text, graphics, gamification mechanics, features, and functionality (excluding User Content), is the exclusive property of Lucere Acuity Ltd and its licensors. It is protected by international copyright, trademark, and other intellectual property laws.
 
 ## 9. Limitation of Liability
 
-To the maximum extent permitted by applicable law, My Company Ltd, its directors, employees, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, arising out of your access to, use of, or inability to use the App.
+To the maximum extent permitted by applicable law, Lucere Acuity Ltd, its directors, employees, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, arising out of your access to, use of, or inability to use the App.
 
 ## 10. Termination
 
@@ -69,5 +69,5 @@ We reserve the right to modify or replace these Terms at any time. If a revision
 
 If you have any questions, concerns, or feedback regarding these Terms, please contact us at:
 
-**Email:** legal@mydomain.com
-**Company:** My Company Ltd
+**Email:** legal@skill-log.com
+**Company:** Lucere Acuity Ltd
