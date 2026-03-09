@@ -82,8 +82,8 @@ export default function Home() {
                 height={60}
               />
             </Link> */}
-            <div className="group relative flex items-center justify-center w-full max-w-sm h-20 md:h-28 bg-neutral-200 rounded-4xl p-1  border-4 border-slate-300 transition-all duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-102 hover:bg-slate-850 active:scale-95">
-              <h1 className="md:text-5xl font-extrabold tracking-tight text-blue-400 text-center">
+            <div className="group relative flex items-center justify-center w-full max-w-sm h-20 md:h-28 bg-black rounded-4xl p-1  border-4 border-slate-950 transition-all duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-102 hover:bg-slate-850 active:scale-95">
+              <h1 className="md:text-5xl font-extrabold tracking-tight text-white text-center">
                 In App Stores Soon
               </h1>
             </div>
