@@ -19,6 +19,12 @@ export default function ContactPage() {
               const res = await sendEmail(formData);
               if (res.success) {
                 alert("Message sent!");
+              } else {
+                const errorMsg =
+                  typeof res.error === "string"
+                    ? res.error
+                    : "Please check your inputs.";
+                alert(errorMsg);
               }
             }}
             className="flex flex-col gap-4"
@@ -46,13 +52,13 @@ export default function ContactPage() {
               />
             </div>
             <input type="hidden" name="token" value={token} />
+            <div style={{ display: "none" }} aria-hidden="true">
+              <input type="text" name="confirm_email" tabIndex={-1} />
+            </div>
             <div className="my-2  self-center">
               <Turnstile
                 siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
-                onSuccess={(token) => {
-                  console.log("token found?");
-                  setToken(token);
-                }}
+                onSuccess={(token) => setToken(token)}
               />
             </div>
             <SubmitButton token={token} />

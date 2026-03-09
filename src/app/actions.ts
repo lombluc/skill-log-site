@@ -1,5 +1,13 @@
 "use server";
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
+import { z } from "zod";
+
+const ContactSchema = z.object({
+  email: z.email({ error: "Invalid email address" }).max(100),
+  message: z.string().min(5, "Message too short").max(500),
+  token: z.string().min(1, "Captcha required"),
+  honeypot: z.string().max(0, "Bot detected"),
+});
 
 const sesClient = new SESClient({
   region: process.env.AWS_REGION,
@@ -9,52 +17,51 @@ const sesClient = new SESClient({
   },
 });
 
-const fromEmail = process.env.CONTACT_FROM_EMAIL!;
-const toEmail = process.env.CONTACT_TO_EMAIL!;
-
 export async function sendEmail(formData: FormData) {
-  const email = formData.get("email") as string;
-  const message = formData.get("message") as string;
-  const token = formData.get("token") as string;
+  const validatedFields = ContactSchema.safeParse({
+    email: formData.get("email"),
+    message: formData.get("message"),
+    token: formData.get("token"),
+    honeypot: formData.get("confirm_email"), // This is the honeypot name
+  });
 
-  if (!token) return { success: false, error: "Captcha required" };
-  if (message.length > 500 || email.length > 100) {
-    return { success: false, error: "Message over 500 characters" };
+  if (!validatedFields.success) {
+    return {
+      success: false,
+      error: validatedFields.error.flatten().fieldErrors,
+    };
   }
 
-  const verifyFormData = new FormData();
-  verifyFormData.append("secret", process.env.TURNSTILE_SECRET_KEY!);
-  verifyFormData.append("response", token);
+  const { email, message, token } = validatedFields.data;
 
   const verifyRes = await fetch(
     "https://challenges.cloudflare.com/turnstile/v0/siteverify",
     {
       method: "POST",
-      body: verifyFormData,
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `secret=${process.env.TURNSTILE_SECRET_KEY}&response=${token}`,
     },
   );
 
   const verification = await verifyRes.json();
-  console.log("verification", verification);
   if (!verification.success) {
-    return { success: false, error: "Invalid captcha. Please try again." };
+    return { success: false, error: "Security check failed. Please refresh." };
   }
 
   const params = {
-    Source: fromEmail,
-    Destination: {
-      ToAddresses: [toEmail],
-    },
+    Source: process.env.CONTACT_FROM_EMAIL!,
+    Destination: { ToAddresses: [process.env.CONTACT_TO_EMAIL!] },
+    ReplyToAddresses: [email],
     Message: {
       Body: {
         Text: {
           Charset: "UTF-8",
-          Data: `From: ${email}\n\nMessage: ${message}`,
+          Data: `New submission from: ${email}\n\n${message}`,
         },
       },
       Subject: {
         Charset: "UTF-8",
-        Data: "New Contact Form Submission",
+        Data: `[Contact Form] Submission from ${email.split("@")[0]}`,
       },
     },
   };
@@ -65,6 +72,6 @@ export async function sendEmail(formData: FormData) {
     return { success: true };
   } catch (error) {
     console.error("SES Error:", error);
-    return { success: false };
+    return { success: false, error: "Failed to send email. Try again later." };
   }
 }
