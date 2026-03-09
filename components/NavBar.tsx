@@ -52,7 +52,7 @@ export default function NavBar() {
               href="/"
               className="hover:text-blue-800 transition-colors duration-400"
             >
-              My App
+              Skill Log
             </a>
           </div>
           <div className="space-x-6 text-sm font-medium">
