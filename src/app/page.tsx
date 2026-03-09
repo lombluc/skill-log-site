@@ -55,7 +55,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-8 pt-4 justify-center md:justify-center">
             {/* App Store Button */}
-            <Link
+            {/* <Link
               href=""
               target="_blank"
               className="hover:scale-105 active:scale-95 transition-transform duration-400"
@@ -67,10 +67,10 @@ export default function Home() {
                 height={60}
                 priority
               />
-            </Link>
+            </Link> */}
 
             {/* Google Play Button */}
-            <Link
+            {/* <Link
               href=""
               target="_blank"
               className="hover:scale-105 active:scale-95 transition-transform duration-400"
@@ -81,7 +81,12 @@ export default function Home() {
                 width={203}
                 height={60}
               />
-            </Link>
+            </Link> */}
+            <div className="group relative flex items-center justify-center w-full max-w-sm h-20 md:h-28 bg-neutral-200 rounded-4xl p-1  border-4 border-slate-300 transition-all duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-102 hover:bg-slate-850 active:scale-95">
+              <h1 className="md:text-5xl font-extrabold tracking-tight text-blue-400 text-center">
+                In App Stores Soon
+              </h1>
+            </div>
           </div>
         </div>
 
@@ -143,7 +148,7 @@ export default function Home() {
       "
           >
             {/* Subtle Inner Glow */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute inset-0 rounded-full bg-linear-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
             <span className="relative text-3xl md:text-5xl font-black tracking-tighter text-slate-100 uppercase">
               Start Now
