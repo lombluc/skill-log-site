@@ -11,6 +11,8 @@
   "dependencies": {
     "@aws-sdk/client-ses": "^3.1001.0",
     "@marsidev/react-turnstile": "^1.4.2",
+    "@upstash/ratelimit": "^2.0.8",
+    "@upstash/redis": "^1.36.4",
     "framer-motion": "^12.34.3",
     "next": "16.1.6",
     "react": "19.2.3",

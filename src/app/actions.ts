@@ -1,6 +1,20 @@
 "use server";
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 import { z } from "zod";
+import { Ratelimit } from "@upstash/ratelimit";
+import { Redis } from "@upstash/redis";
+import { headers } from "next/headers";
+
+const redis = new Redis({
+  url: process.env.KV_REST_API_URL!,
+  token: process.env.KV_REST_API_TOKEN!,
+});
+
+const contactFormResult = new Ratelimit({
+  redis: redis,
+  limiter: Ratelimit.slidingWindow(3, "1 d"),
+  prefix: "contact_limit",
+});
 
 const ContactSchema = z.object({
   email: z.email({ error: "Invalid email address" }).max(100),
@@ -18,6 +32,18 @@ const sesClient = new SESClient({
 });
 
 export async function sendEmail(formData: FormData) {
+  const headerStore = await headers();
+  const ip = headerStore.get("x-forwarded-for")?.split(",")[0] ?? "127.0.0.1";
+
+  const { success, reset } = await contactFormResult.limit(ip);
+
+  if (!success) {
+    return {
+      success: false,
+      error: `Too many messages. You can try again in ${Math.ceil((reset - Date.now()) / 3600000)} hours.`,
+    };
+  }
+
   const validatedFields = ContactSchema.safeParse({
     email: formData.get("email"),
     message: formData.get("message"),
