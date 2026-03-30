@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 
 export default function BasePage({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen bg-cloud font-sans text-text-color">
+    <div className="min-h-screen bg-background font-sans text-text-color">
       <NavBar />
 
       {children}

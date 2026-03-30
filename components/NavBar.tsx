@@ -45,7 +45,7 @@ export default function NavBar() {
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="sticky top-0 z-50 bg-slate-100/70 backdrop-blur-md border-b border-slate-200/50">
+      <div className="sticky top-0 z-50 bg-background-highlight/70 backdrop-blur-md border-b border-slate-200/50">
         <nav className="flex items-center justify-between p-6 max-w-6xl mx-auto">
           <div className="text-2xl font-bold bg-linear-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
             <a
