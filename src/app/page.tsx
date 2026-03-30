@@ -30,6 +30,7 @@ const features = [
     description:
       "Build a system tailored to your life. Watch levels increase, skills improve, and quests complete. Stay motivated with visible, gamified progress tied to real effort.",
     image: "/images/paperPlane.png",
+    backgroundImage: "/images/paperPlaneBackground.png",
   },
 ];
 
