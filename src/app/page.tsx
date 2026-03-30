@@ -126,36 +126,33 @@ export default function Home() {
         <hr className="border-slate-50" />
       </div>
 
-      <section className="max-w-6xl mx-auto px-6 pt-16 pb-24 mb-16 text-center md:text-left md:flex items-center">
-        <div className="md:w-1/2 space-y-6">
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight transition-transform duration-500 ease-[--ease-spring] hover:scale-102 active:scale-95 text-slate-900">
-            Start Your <span className="text-blue-600">Journey Now</span>
-          </h1>
-          <p className="text-base text-slate-600 max-w-lg font-description">
-            Gain XP in your own skills by working on your real-life tasks.
-          </p>
-        </div>
-        <div className="md:w-1/2 mt-16 md:mt-0 flex justify-center">
-          <button
-            onClick={handleScrollToTop}
-            className="
-        group relative flex items-center justify-center
-        w-full max-w-sm h-20 md:h-28
-        bg-slate-900 rounded-full p-1
-        shadow-[0_20px_50px_rgba(172,112,70,0.7)] 
-        border-4 border-slate-800
-        transition-all duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)]
-        hover:scale-102 hover:bg-slate-850 active:scale-95
-      "
-          >
-            {/* Subtle Inner Glow */}
-            <div className="absolute inset-0 rounded-full bg-linear-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+      <section className="max-w-6xl mx-auto px-6 pt-16 pb-12 mb-16 flex flex-col items-center text-center gap-10 md:gap-8">
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight transition-transform duration-500 ease-[--ease-spring] hover:scale-102 active:scale-95 text-slate-900">
+          Start Your <span className="text-blue-600">Journey Now</span>
+        </h1>
 
-            <span className="relative text-3xl md:text-5xl font-black tracking-tighter text-slate-100 uppercase">
-              Start Now
-            </span>
-          </button>
-        </div>
+        <button
+          onClick={handleScrollToTop}
+          className="
+            group relative flex items-center justify-center
+            w-full max-w-sm h-20 md:h-24
+            bg-slate-900 rounded-2xl p-1
+            border-4 border-slate-900
+            transition-all duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)]
+            hover:scale-102 active:scale-95
+            "
+        >
+          {/* Subtle Inner Glow - Fixed the oval issue by matching the border radius */}
+          <div className="absolute inset-0 rounded-xl bg-linear-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+
+          <span className="relative text-3xl md:text-5xl font-black tracking-tighter text-slate-100 uppercase leading-none translate-y-0.5">
+            Start Now
+          </span>
+        </button>
+
+        <p className="text-base text-slate-600 max-w-lg font-description">
+          Gain XP in your own skills by working on your real-life tasks.
+        </p>
       </section>
     </BasePage>
   );
