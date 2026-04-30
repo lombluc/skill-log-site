@@ -1,6 +1,6 @@
 # Privacy Policy for Skill Log
 
-**Effective Date:** March 3, 2026
+**Effective Date:** April 30, 2026
 
 This Privacy Policy describes how Lucere Acuity Ltd ("we", "us", or "our") collects, uses, and shares your personal information. It covers two contexts:
 
@@ -24,7 +24,18 @@ When you create an account, you can authenticate using **Google Sign-In**, **Sig
 
 This information is used solely to create and manage your user account. *Note: If you choose to sign up using an email and password, your password is securely hashed and managed by our authentication provider (Supabase). We do not collect, see, or store your plain-text password.*
 
-### 1.2 Usage & Diagnostic Data (Firebase Crashlytics)
+### 1.2 CAPTCHA Data (hCaptcha)
+
+To protect the App's login and account creation flows from automated bots and spam, we use **hCaptcha**, provided by Intuition Machines, Inc. When you attempt to log in or register, hCaptcha may collect:
+
+- **IP address**
+- **Browser and device information** (e.g., user agent, OS version)
+- **Behavioural and interaction signals** (e.g., mouse movements, timing patterns used to distinguish humans from bots)
+- **A session cookie or local storage token** used to record that a challenge has been completed
+
+This data is processed by hCaptcha on our behalf for the sole purpose of bot detection and fraud prevention. It is **not** used for advertising or sold to third parties. The legal basis for this processing is our legitimate interest in securing the App against automated abuse. Data collected by hCaptcha is governed by [Intuition Machines' Privacy Policy](https://www.hcaptcha.com/privacy) and their standard retention practices.
+
+### 1.3 Usage & Diagnostic Data (Firebase Crashlytics)
 
 We offer **Firebase Crashlytics** as an optional, opt-in feature to help monitor App stability. It is **disabled by default** and can be enabled or disabled at any time in the App's settings. When enabled and the App crashes or encounters a significant error, it sends a report containing:
 
@@ -34,7 +45,7 @@ We offer **Firebase Crashlytics** as an optional, opt-in feature to help monitor
 
 This data is **pseudonymised** and is not intentionally linked to your name or email in our crash reporting dashboard. Under GDPR, a Firebase Installation UUID is still considered personal data; we process it on the basis of our legitimate interest in maintaining App stability. Crashlytics data is retained for up to **90 days**, in line with Firebase's standard retention period.
 
-### 1.3 Local Storage (On-Device)
+### 1.4 Local Storage (On-Device)
 
 The App stores a small amount of data directly on your device, including:
 
@@ -44,15 +55,15 @@ The App stores a small amount of data directly on your device, including:
 
 The App stores your data directly on your device, including authentication tokens, app settings and preferences, and all content you create within the App (such as quests, tasks, and progress records). This data is stored only on your device and is not transmitted to our servers unless you are a subscriber with syncing enabled (see Section 2.2). It is cleared when you delete your account but is **not** cleared on logout.
 
-### 1.4 Device Information (Expo Framework)
+### 1.5 Device Information (Expo Framework)
 
 The App is built using the Expo framework. As part of standard app operation and to deliver over-the-air updates, Expo may collect basic device identifiers and platform information (such as OS version and device model). This is handled in accordance with [Expo's Privacy Policy](https://expo.dev/privacy).
 
-### 1.5 Push Notifications
+### 1.6 Push Notifications
 
 If you grant permission, the App may send you push notifications (for example, streak reminders). To deliver these, a push notification token associated with your device is stored on our servers. You can withdraw permission at any time in your device's system settings.
 
-### 1.6 Information We Do NOT Collect
+### 1.7 Information We Do NOT Collect
 
 - We do **not** collect precise GPS location data.
 - We do **not** access your contacts, photos, or camera unless explicitly requested for a specific feature and you grant permission.
@@ -66,6 +77,7 @@ If you grant permission, the App may send you push notifications (for example, s
 |---|---|---|
 | Authenticating users and maintaining your account | Name, email | Performance of a contract |
 | Storing and syncing your App content | Skills, quests, tasks, XP data | Performance of a contract |
+| Preventing bot abuse and protecting login flows | hCaptcha data (IP, device info, behavioural signals) | Legitimate interests |
 | Fixing bugs and improving performance | Crashlytics data | Legitimate interests |
 | Sending essential account-related notifications | Email | Performance of a contract |
 | Delivering push notifications (if enabled) | Push token | Consent |
@@ -101,12 +113,15 @@ We do not sell your personal data. We share information with the following provi
 | **Google Sign-In / Firebase** | Authentication and crash reporting | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | **Sign in with Apple** | Authentication | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | **Supabase** | Authentication and database storage (primary region: EU — Sweden) | [supabase.com/privacy](https://supabase.com/privacy) |
+| **hCaptcha (Intuition Machines, Inc.)** | Bot detection and login security | [hcaptcha.com/privacy](https://www.hcaptcha.com/privacy) |
 | **Expo** | App framework and over-the-air updates | [expo.dev/privacy](https://expo.dev/privacy) |
-| Amazon SES (AWS) | Delivery of transactional emails (welcome email, verification, contact form) | [aws.amazon.com/privacy](aws.amazon.com/privacy) |
+| **Amazon SES (AWS)** | Delivery of transactional emails (welcome email, verification, contact form) | [aws.amazon.com/privacy](https://aws.amazon.com/privacy) |
 
 ### 3.1 International Data Transfers
 
 Our primary database provider, Supabase, hosts data on Amazon Web Services (AWS) infrastructure with a primary region in Sweden (EU). However, AWS operates globally and some data may be processed on infrastructure outside the EEA as part of normal cloud operations.
+
+hCaptcha is operated by Intuition Machines, Inc., a US-based company. Data submitted to hCaptcha may be processed in the United States and other countries. Where required, such transfers are conducted under appropriate safeguards, including Standard Contractual Clauses (SCCs).
 
 If you are located in the **European Economic Area (EEA) or the United Kingdom**, any transfer of your data to a third country is conducted under appropriate safeguards, including Standard Contractual Clauses (SCCs) as approved by the European Commission and UK Information Commissioner's Office (ICO).
 
@@ -131,6 +146,8 @@ Once a deletion request is processed, your account data will be permanently remo
 
 Crashlytics crash report data is retained for up to **90 days** from collection.
 
+hCaptcha data is retained in accordance with Intuition Machines' own retention policy, which you can review at [hcaptcha.com/privacy](https://www.hcaptcha.com/privacy).
+
 ---
 
 ## 5. Security
@@ -154,6 +171,10 @@ We retain contact form submissions for up to **12 months**, after which they are
 The Site uses only **strictly necessary cookies** — small text files placed on your device that are essential for the Site to function. These include session and security tokens used to protect the contact form from abuse (e.g. CSRF protection). These cookies do not track you and do not require your consent under UK/EU GDPR.
 
 We do not currently use analytics, advertising, or tracking cookies on the Site.
+
+#### hCaptcha Cookies (App Login)
+
+During the login and registration flows within the App, **hCaptcha** may set cookies or use local storage to record that a CAPTCHA challenge has been successfully completed. These are strictly functional and are used solely for security purposes (bot and fraud prevention). They are not used for advertising or cross-site tracking. As they are necessary for the security of the service, they do not require separate consent under UK/EU GDPR.
 
 ---
 
