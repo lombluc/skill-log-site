@@ -1,35 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F8F1DE;
-  --foreground: #171717;
-  --brand-bg: #8EE0C7;
-  --night-bg: #282355;
-  --cloud: #FFE7B5;
-  --cloud-highlight: #FED09C;
-  --text-color: #4e4133;
-  --text-muted-color: #968F73;
-  --background-highlight: #F3DEBF;
-  --sb-bg: #fffaf3;
-  --sb-scroll: #FFE7B5;
+  --brand-primary:   #EA4D58;
+  --brand-secondary: #FFA028;
+  --parchment-light: #F2DDB0;
+  --parchment-mid:   #D4A96A;
+  --parchment-dark:  #C8945A;
+  --cork-primary:    #DEB67E;
+  --cork-secondary:  #B48766;
+  --paper-light:     #FFF8E7;
+  --paper-mid:       #E3D9C1;
+  --paper-dark:      #B5AC97;
+  --text-parchment:  #4E453A;
+  --text-paper:      #4E4133;
+  --dark-ink:        #3D2B1F;
+  --wood-brown:      #5C3D1E;
+  --wood-dark:       #3A2210;
+  --sky-blue:        #7EC8D8;
+  --cloud-light:     #FFE7B5;
+  --cloud-mid:       #FED09C;
+  --cloud-dark:      #FF916F;
+  --terracotta:      #EB5D45;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-brand-bg: var(--brand-bg);
-  --color-cloud: var(--cloud);
-  --color-cloud-highlight: var(--cloud-highlight);
-  --color-text-color: var(--text-color);
-  --color-text-muted-color: var(--text-muted-color);
-  --color-background-highlight: var(--background-highlight);
+      /* ── Brand ── */
+  --color-brand-primary:   #EA4D58;
+  --color-brand-secondary: #FFA028;
+ 
+  /* ── Parchment family ── */
+  --color-parchment-light: #F2DDB0;
+  --color-parchment-mid:   #D4A96A;
+  --color-parchment-dark:  #C8945A;
+ 
+  /* ── Corkboard ── */
+  --color-cork-primary:    #DEB67E;
+  --color-cork-secondary:  #B48766;
+ 
+  /* ── Paper family ── */
+  --color-paper-light:     #FFF8E7;
+  --color-paper-mid:       #E3D9C1;
+  --color-paper-dark:      #B5AC97;
+ 
+  /* ── Text ── */
+  --color-text-parchment:  #4E453A;
+  --color-text-paper:      #4E4133;
+  --color-dark-ink:        #3D2B1F;
+ 
+  /* ── Wood ── */
+  --color-wood-brown:      #5C3D1E;
+  --color-wood-dark:       #3A2210;
+ 
+  /* ── Sky / clouds ── */
+  --color-sky-blue:        #7EC8D8;
+  --color-cloud-light:     #FFE7B5;
+  --color-cloud-mid:       #FED09C;
+  --color-cloud-dark:      #FF916F;
+ 
+  /* ── Coral ── */
+  --color-terracotta:      #EB5D45;
+ 
+  /* ── Fonts ──
+     next/font sets --font-playfair and --font-lora on <body>.
+     Tailwind's --font-{name} maps to the font-{name} utility.  */
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-body:    var(--font-lora),     Georgia, serif;
+
   --color-sb-bg: var(--sb-bg);
   --color-sb-scroll: var(--sb-scroll);
-
-  --font-sans: var(--font-zain);
-  --font-description: var(--font-plus-jakarta-sans);
-
-  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -40,13 +78,225 @@
 } */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.7;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+ 
+.section-cta .section-inner {
+  padding: 8rem 2rem;
+}
+
+
+/* ─────────────────────────────────────────
+   KEYFRAMES
+───────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes xpGrow {
+  from { width: 0%; }
+  to   { width: 72%; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50%       { opacity: 1;   transform: scale(1.2); }
+}
+
+/* ─────────────────────────────────────────
+   ANIMATION HELPER CLASSES
+───────────────────────────────────────── */
+.float-anim { animation: float   5s           ease-in-out infinite; }
+.sparkle-1  { animation: sparkle 2.2s 0.3s   ease-in-out infinite; }
+.sparkle-2  { animation: sparkle 2.8s 0.9s   ease-in-out infinite; }
+.sparkle-3  { animation: sparkle 3.1s 1.5s   ease-in-out infinite; }
+
+/* ─────────────────────────────────────────
+   SCROLL REVEAL
+───────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible  { opacity: 1; transform: none; }
+.reveal-delay-1  { transition-delay: 0.1s; }
+.reveal-delay-2  { transition-delay: 0.2s; }
+.reveal-delay-3  { transition-delay: 0.3s; }
+.reveal-delay-4  { transition-delay: 0.4s; }
+
+/* ─────────────────────────────────────────
+   HERO — sky-to-cork gradient + cloud blobs
+   (multi-stop gradient not expressible in
+   Tailwind without an arbitrary value wall)
+───────────────────────────────────────── */
+.hero {
+  background: linear-gradient(
+    180deg,
+    #B8E4EF                  0%,
+    #C8EBF2                  18%,
+    var(--cloud-light)       42%,
+    var(--parchment-light)   70%,
+    var(--cork-primary)      100%
+  );
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 8%; left: -5%;
+  width: 55%; height: 220px;
+  background:
+    radial-gradient(ellipse at 30% 50%, rgba(255,231,181,0.55) 0%, transparent 70%),
+    radial-gradient(ellipse at 70% 40%, rgba(254,208,156,0.40) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 12%; right: -4%;
+  width: 45%; height: 180px;
+  background: radial-gradient(ellipse at 60% 45%, rgba(255,231,181,0.45) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Hero staggered entry animations */
+.hero-eyebrow  { opacity: 0; animation: fadeUp 0.7s 0.20s ease forwards; }
+.hero-headline { opacity: 0; animation: fadeUp 0.7s 0.40s ease forwards; }
+.hero-sub      { opacity: 0; animation: fadeUp 0.7s 0.60s ease forwards; }
+.hero-xp       { opacity: 0; animation: fadeUp 0.7s 0.75s ease forwards; }
+.hero-btns     { opacity: 0; animation: fadeUp 0.7s 0.90s ease forwards; }
+.hero-note     { opacity: 0; animation: fadeUp 0.7s 1.10s ease forwards; }
+.hero-landscape{ opacity: 0; animation: fadeUp 0.9s 1.20s ease forwards; }
+
+/* XP fill bar — width driven by xpGrow keyframe */
+.xp-fill {
+  height: 100%;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--brand-secondary), var(--brand-primary));
+  width: 0%;
+  animation: xpGrow 1.8s 1.1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ─────────────────────────────────────────
+   PROBLEM SECTION
+───────────────────────────────────────── */
+.section-problem {
+  background: linear-gradient(160deg, var(--wood-brown) 0%, #3e2310 100%);
+}
+
+/* Ghost ordinal number via data-num attribute */
+.pain-card {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 248, 231, 0.05);
+  border-color: rgba(242, 221, 176, 0.14);
+}
+.pain-card::before {
+  content: attr(data-num);
+  position: absolute;
+  top: -0.5rem; right: 1.2rem;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: rgba(242, 221, 176, 0.06);
+  line-height: 1;
+  pointer-events: none;
+}
+.pain-card-hover:hover {
+  background: rgba(255, 248, 231, 0.09);
+  border-color: rgba(234, 77, 88, 0.45);
+}
+
+/* ─────────────────────────────────────────
+   HOW SECTION
+───────────────────────────────────────── */
+.section-how { background: var(--parchment-light); }
+
+/* ─────────────────────────────────────────
+   FEATURES SECTION
+───────────────────────────────────────── */
+.section-features { background: var(--paper-light); }
+
+/* Top-edge shimmer on feature cards */
+.feature-card {
+  position: relative;
+  overflow: hidden;
+}
+.feature-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--brand-primary), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.feature-card:hover::after { opacity: 1; }
+
+/* Wide feature card — dark wood gradient */
+.feature-wide {
+  background: linear-gradient(135deg, var(--wood-brown), #3e2310);
+}
+
+/* ─────────────────────────────────────────
+   PROOF / QUOTES SECTION
+───────────────────────────────────────── */
+.section-proof {
+  background: linear-gradient(160deg, var(--cork-primary) 0%, var(--parchment-mid) 100%);
+}
+
+/* Decorative open-quote mark */
+.quote-card { position: relative; }
+.quote-card::before {
+  content: '\201C';
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  line-height: 0.7;
+  color: var(--brand-primary);
+  opacity: 0.25;
+  position: absolute;
+  top: 1.2rem; left: 1.4rem;
+  pointer-events: none;
+}
+
+/* ─────────────────────────────────────────
+   CTA SECTION
+───────────────────────────────────────── */
+.section-cta {
+  background: linear-gradient(160deg, var(--wood-brown) 0%, var(--wood-dark) 100%);
+}
+
+/* ── FOOTER LINKS ── */
+.footer-link {
+  color: rgba(242, 221, 176, 0.42);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-link:hover { color: var(--parchment-mid); }
+
+/* ─────────────────────────────────────────
+   RESPONSIVE OVERRIDES
+───────────────────────────────────────── */
+@media (max-width: 768px) {
+  .feature-wide { grid-template-columns: 1fr !important; }
 }
 
 @layer base {
