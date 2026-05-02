@@ -29,26 +29,26 @@ const CreateSkillIcon = (
     <rect
       x="16"
       y="28"
-      width="20"
+      width="16"
       height="3"
       rx="1.5"
       fill="#EA4D58"
       opacity="0.32"
     />
-    <circle cx="44" cy="38" r="9" fill="#EA4D58" />
+    <circle cx="40" cy="38" r="9" fill="#EA4D58" />
     <line
-      x1="44"
+      x1="40"
       y1="33"
-      x2="44"
+      x2="40"
       y2="43"
       stroke="white"
       strokeWidth="1.8"
       strokeLinecap="round"
     />
     <line
-      x1="39"
+      x1="35"
       y1="38"
-      x2="49"
+      x2="45"
       y2="38"
       stroke="white"
       strokeWidth="1.8"
@@ -121,34 +121,22 @@ const LevelUpIcon = (
       fill="#FFA028"
       opacity="0.75"
     />
-    <path
-      d="M8 30 L22 22 L36 15"
-      fill="none"
-      stroke="#3D2B1F"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeDasharray="3 2"
-      opacity="0.35"
-    />
   </svg>
 );
 
 const QuestsIcon = (
   <svg width="60" height="60" viewBox="0 0 60 60" aria-hidden="true">
-    <path
-      d="M12 44 L22 28 L32 36 L42 18 L50 22"
-      fill="none"
-      stroke="#EA4D58"
-      strokeWidth="2"
+    <ellipse cx="24" cy="52" rx="11" ry="3.5" fill="#C8945A" opacity="0.35" />
+    <line
+      x1="24"
+      y1="52"
+      x2="24"
+      y2="9"
+      stroke="#C8945A"
+      strokeWidth="2.5"
       strokeLinecap="round"
-      strokeLinejoin="round"
     />
-    <circle cx="30" cy="10" r="5" fill="#FFA028" opacity="0.85" />
-    <path
-      d="M28 10 L30 5 L32 10 L37 10 L33 13 L35 18 L30 15 L25 18 L27 13 L23 10 Z"
-      fill="#FFE7B5"
-      transform="scale(0.65) translate(16 8)"
-    />
+    <path d="M24 9 L50 20 L24 31 Z" fill="#EA4D58" opacity="0.9" />
   </svg>
 );
 

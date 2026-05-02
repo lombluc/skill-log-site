@@ -200,7 +200,7 @@ const LedgerIcon = (
 const UIIcon = (
   <svg viewBox="0 0 48 48" aria-hidden="true" className="w-full h-full">
     <path
-      d="M8 20 Q8 14 14 12 L34 12 Q40 12 40 20 L40 30 Q40 38 34 38 L14 38 Q8 38 8 30 Z"
+      d="M8 20 Q8 14 14 12 L36 12 Q42 12 42 20 L42 30 Q42 38 36 38 L14 38 Q8 38 8 30 Z"
       fill="none"
       stroke="#EA4D58"
       strokeWidth="1.8"
@@ -257,7 +257,7 @@ const SkillBarsIllustration = (
       gradient="linear-gradient(90deg,#EB5D45,#EA4D58)"
     />
     <p
-      className="mt-5 font-display italic text-[0.7rem] tracking-[0.1em] uppercase text-center"
+      className="mt-5 font-display italic text-[0.7rem] tracking-widest uppercase text-center"
       style={{ color: "rgba(242,221,176,0.32)" }}
     >
       Your custom skill ledger. Grows with you.
@@ -289,7 +289,7 @@ export default function FeaturesSection() {
           </h2>
 
           {/* Lead copy */}
-          <p className="reveal text-[1.05rem] text-text-paper max-w-[560px] mt-6 mb-8">
+          <p className="reveal text-[1.05rem] text-text-paper max-w-140 mt-6 mb-8">
             Built for the productive gamer, the self-optimizer, the recovering
             procrastinator. Whether you&apos;re studying, coding, training, or
             building a creative skill from scratch — every feature is designed

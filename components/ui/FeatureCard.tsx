@@ -58,18 +58,21 @@ export default function FeatureCard({
     <div
       className={`feature-card reveal ${delayClass} bg-paper-mid border border-paper-dark rounded p-8 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(92,61,30,0.12)] hover:border-parchment-dark transition-[transform,box-shadow,border-color] duration-200`}
     >
-      {/* Icon */}
-      {icon && <div className="w-12 h-12 mb-5">{icon}</div>}
+      <div className="flex justify-between">
+        {/* Tag */}
+        <div>
+          <span className="feature-tag block font-display text-[0.65rem] italic tracking-[0.22em] uppercase text-brand-primary mb-2">
+            {tag}
+          </span>
 
-      {/* Tag */}
-      <span className="feature-tag block font-display text-[0.65rem] italic tracking-[0.22em] uppercase text-brand-primary mb-2">
-        {tag}
-      </span>
-
-      {/* Heading */}
-      <h3 className="font-display text-[1.08rem] font-bold text-dark-ink mb-2 tracking-[0.01em]">
-        {title}
-      </h3>
+          {/* Heading */}
+          <h3 className="font-display text-[1.08rem] font-bold text-dark-ink mb-2 tracking-[0.01em]">
+            {title}
+          </h3>
+        </div>
+        {/* Icon */}
+        {icon && <div className="w-12 h-12 mb-5">{icon}</div>}
+      </div>
 
       {/* Body */}
       <p className="text-[0.92rem] text-text-paper leading-[1.78]">{body}</p>

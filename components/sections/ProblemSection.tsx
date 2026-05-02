@@ -46,82 +46,35 @@ const NoProgressIcon = (
 
 const RobotAppsIcon = (
   <svg viewBox="0 0 42 42" aria-hidden="true" className="w-full h-full">
-    <rect
-      x="8"
-      y="8"
-      width="26"
-      height="26"
-      rx="3"
-      fill="none"
-      stroke="#DEB67E"
-      strokeWidth="1.5"
-    />
-    <line
-      x1="14"
-      y1="16"
-      x2="28"
-      y2="16"
-      stroke="#DEB67E"
-      strokeWidth="1.2"
-      strokeDasharray="3 2"
-    />
-    <line
-      x1="14"
-      y1="21"
-      x2="24"
-      y2="21"
-      stroke="#DEB67E"
-      strokeWidth="1.2"
-      strokeDasharray="3 2"
-    />
-    <line
-      x1="14"
-      y1="26"
-      x2="20"
-      y2="26"
-      stroke="#DEB67E"
-      strokeWidth="1.2"
-      strokeDasharray="3 2"
-    />
-    <circle
-      cx="30"
-      cy="30"
-      r="6"
-      fill="#EA4D58"
-      opacity="0.25"
-      stroke="#EA4D58"
-      strokeWidth="1"
-    />
-    <text
-      x="30"
-      y="34"
-      textAnchor="middle"
-      fontSize="7"
-      fill="#EA4D58"
-      fontWeight="bold"
-    >
-      ?
-    </text>
+    {/* Antenna */}
+    <circle cx="21" cy="3.5" r="1.5" fill="#DEB67E" />
+    <line x1="21" y1="5" x2="21" y2="9" stroke="#DEB67E" strokeWidth="1.5" strokeLinecap="round" />
+    {/* Screen / body */}
+    <rect x="6" y="9" width="30" height="25" rx="2" fill="none" stroke="#DEB67E" strokeWidth="1.5" />
+    {/* Square robot eyes */}
+    <rect x="11" y="15" width="7" height="5" rx="0.5" fill="#DEB67E" opacity="0.35" stroke="#DEB67E" strokeWidth="1" />
+    <rect x="24" y="15" width="7" height="5" rx="0.5" fill="#DEB67E" opacity="0.35" stroke="#DEB67E" strokeWidth="1" />
+    {/* Flat expressionless mouth */}
+    <line x1="14" y1="26" x2="28" y2="26" stroke="#EA4D58" strokeWidth="1.8" strokeLinecap="round" />
   </svg>
 );
 
 const TooManyGoalsIcon = (
   <svg viewBox="0 0 42 42" aria-hidden="true" className="w-full h-full">
-    <path
-      d="M21 6 L21 21"
-      stroke="#EA4D58"
-      strokeWidth="2"
-      strokeLinecap="round"
-      opacity="0.7"
-    />
-    <circle cx="21" cy="21" r="3" fill="#EA4D58" opacity="0.7" />
-    <path
-      d="M9 33 Q15 24 21 24 Q27 24 33 33"
-      fill="none"
-      stroke="#DEB67E"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-    />
+    {/* Center node */}
+    <circle cx="21" cy="21" r="2.5" fill="none" stroke="#DEB67E" strokeWidth="1.5" />
+    {/* Scattered goal lines */}
+    <line x1="21" y1="21" x2="32" y2="10" stroke="#DEB67E" strokeWidth="1.4" strokeLinecap="round" />
+    <line x1="21" y1="21" x2="35" y2="21" stroke="#DEB67E" strokeWidth="1.4" strokeLinecap="round" opacity="0.75" />
+    <line x1="21" y1="21" x2="30" y2="34" stroke="#DEB67E" strokeWidth="1.4" strokeLinecap="round" />
+    <line x1="21" y1="21" x2="11" y2="34" stroke="#DEB67E" strokeWidth="1.4" strokeLinecap="round" opacity="0.75" />
+    <line x1="21" y1="21" x2="7" y2="14" stroke="#DEB67E" strokeWidth="1.4" strokeLinecap="round" opacity="0.5" />
+    {/* Goal dots at tips */}
+    <circle cx="32" cy="10" r="2" fill="#EA4D58" />
+    <circle cx="35" cy="21" r="2" fill="#EA4D58" opacity="0.75" />
+    <circle cx="30" cy="34" r="2" fill="#EA4D58" />
+    <circle cx="11" cy="34" r="2" fill="#EA4D58" opacity="0.75" />
+    <circle cx="7" cy="14" r="2" fill="#EA4D58" opacity="0.5" />
   </svg>
 );
 
@@ -152,7 +105,7 @@ export default function ProblemSection() {
 
           {/* Lead */}
           <p
-            className="reveal text-[1.05rem] max-w-[580px] mt-6 mb-14"
+            className="reveal text-[1.05rem] max-w-145 mt-6 mb-14"
             style={{ color: "rgba(242, 221, 176, 0.72)" }}
           >
             The hours go in. The skills slowly improve. But there&apos;s no
@@ -171,14 +124,12 @@ export default function ProblemSection() {
             }}
           >
             <PainCard
-              num="01"
               icon={NoProgressIcon}
               title="No Visible Progress"
               body="You practice. You improve. But without a record, every session disappears into the void. Six months later, you genuinely can't tell how far you've come — and that's demoralising."
               quote={`"I know I've been putting in the hours. I just can't see it."`}
             />
             <PainCard
-              num="02"
               icon={RobotAppsIcon}
               title="Apps Built for Robots"
               body="Every productivity tool feels like an accountant's spreadsheet. There's no joy, no narrative, no reward for doing the work. You open it, feel nothing, and close it."
@@ -186,7 +137,6 @@ export default function ProblemSection() {
               delayClass="reveal-delay-1"
             />
             <PainCard
-              num="03"
               icon={TooManyGoalsIcon}
               title="Too Many Goals, No Quest"
               body="You have ambitions — coding, fitness, a side project, a language. But they sit in your head, formless. Without structure, big goals stay wishes. And wishes don't get completed."
