@@ -48,27 +48,122 @@ const RobotAppsIcon = (
   <svg viewBox="0 0 42 42" aria-hidden="true" className="w-full h-full">
     {/* Antenna */}
     <circle cx="21" cy="3.5" r="1.5" fill="#DEB67E" />
-    <line x1="21" y1="5" x2="21" y2="9" stroke="#DEB67E" strokeWidth="1.5" strokeLinecap="round" />
+    <line
+      x1="21"
+      y1="5"
+      x2="21"
+      y2="9"
+      stroke="#DEB67E"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+    />
     {/* Screen / body */}
-    <rect x="6" y="9" width="30" height="25" rx="2" fill="none" stroke="#DEB67E" strokeWidth="1.5" />
+    <rect
+      x="6"
+      y="9"
+      width="30"
+      height="25"
+      rx="2"
+      fill="none"
+      stroke="#DEB67E"
+      strokeWidth="1.5"
+    />
     {/* Square robot eyes */}
-    <rect x="11" y="15" width="7" height="5" rx="0.5" fill="#DEB67E" opacity="0.35" stroke="#DEB67E" strokeWidth="1" />
-    <rect x="24" y="15" width="7" height="5" rx="0.5" fill="#DEB67E" opacity="0.35" stroke="#DEB67E" strokeWidth="1" />
+    <rect
+      x="11"
+      y="15"
+      width="7"
+      height="5"
+      rx="0.5"
+      fill="#DEB67E"
+      opacity="0.35"
+      stroke="#DEB67E"
+      strokeWidth="1"
+    />
+    <rect
+      x="24"
+      y="15"
+      width="7"
+      height="5"
+      rx="0.5"
+      fill="#DEB67E"
+      opacity="0.35"
+      stroke="#DEB67E"
+      strokeWidth="1"
+    />
     {/* Flat expressionless mouth */}
-    <line x1="14" y1="26" x2="28" y2="26" stroke="#EA4D58" strokeWidth="1.8" strokeLinecap="round" />
+    <line
+      x1="14"
+      y1="26"
+      x2="28"
+      y2="26"
+      stroke="#EA4D58"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
   </svg>
 );
 
 const TooManyGoalsIcon = (
   <svg viewBox="0 0 42 42" aria-hidden="true" className="w-full h-full">
     {/* Center node */}
-    <circle cx="21" cy="21" r="2.5" fill="none" stroke="#DEB67E" strokeWidth="1.5" />
+    <circle
+      cx="21"
+      cy="21"
+      r="2.5"
+      fill="none"
+      stroke="#DEB67E"
+      strokeWidth="1.5"
+    />
     {/* Scattered goal lines */}
-    <line x1="21" y1="21" x2="32" y2="10" stroke="#DEB67E" strokeWidth="1.4" strokeLinecap="round" />
-    <line x1="21" y1="21" x2="35" y2="21" stroke="#DEB67E" strokeWidth="1.4" strokeLinecap="round" opacity="0.75" />
-    <line x1="21" y1="21" x2="30" y2="34" stroke="#DEB67E" strokeWidth="1.4" strokeLinecap="round" />
-    <line x1="21" y1="21" x2="11" y2="34" stroke="#DEB67E" strokeWidth="1.4" strokeLinecap="round" opacity="0.75" />
-    <line x1="21" y1="21" x2="7" y2="14" stroke="#DEB67E" strokeWidth="1.4" strokeLinecap="round" opacity="0.5" />
+    <line
+      x1="21"
+      y1="21"
+      x2="32"
+      y2="10"
+      stroke="#DEB67E"
+      strokeWidth="1.4"
+      strokeLinecap="round"
+    />
+    <line
+      x1="21"
+      y1="21"
+      x2="35"
+      y2="21"
+      stroke="#DEB67E"
+      strokeWidth="1.4"
+      strokeLinecap="round"
+      opacity="0.75"
+    />
+    <line
+      x1="21"
+      y1="21"
+      x2="30"
+      y2="34"
+      stroke="#DEB67E"
+      strokeWidth="1.4"
+      strokeLinecap="round"
+    />
+    <line
+      x1="21"
+      y1="21"
+      x2="11"
+      y2="34"
+      stroke="#DEB67E"
+      strokeWidth="1.4"
+      strokeLinecap="round"
+      opacity="0.75"
+    />
+    <line
+      x1="21"
+      y1="21"
+      x2="7"
+      y2="14"
+      stroke="#DEB67E"
+      strokeWidth="1.4"
+      strokeLinecap="round"
+      opacity="0.5"
+    />
     {/* Goal dots at tips */}
     <circle cx="32" cy="10" r="2" fill="#EA4D58" />
     <circle cx="35" cy="21" r="2" fill="#EA4D58" opacity="0.75" />

@@ -1,27 +1,11 @@
-'use client';
+"use client";
 
-import SparkleIcon   from '@/components/ui/SparkleIcon';
-import HeroXpBar     from '@/components/ui/HeroXpBar';
-import HeroLandscape from '@/components/ui/HeroLandscape';
+import HeroXpBar from "@/components/ui/HeroXpBar";
+import HeroLandscape from "@/components/ui/HeroLandscape";
 
-/**
- * HeroSection
- * Full-viewport hero: sky-to-cork gradient (via .hero CSS class),
- * animated entry sequence, sparkle accents, XP bar teaser, CTAs,
- * and the HeroLandscape illustration.
- *
- * No useReveal needed here — elements animate via CSS keyframes
- * on mount (fadeUp, xpGrow) rather than IntersectionObserver.
- */
 export default function HeroSection() {
   return (
     <section className="hero relative min-h-screen flex flex-col items-center justify-center text-center pt-32 px-8 overflow-hidden">
-
-      {/* ── Floating sparkles ── */}
-      <SparkleIcon size={24} fill="#FFA028" fillOpacity={0.55} animClass="sparkle-1" style={{ top: 120, left: '8%' }} />
-      <SparkleIcon size={18} fill="#EA4D58" fillOpacity={0.45} animClass="sparkle-2" style={{ top: 200, right: '10%' }} />
-      <SparkleIcon size={14} fill="#7EC8D8" fillOpacity={0.50} animClass="sparkle-3" style={{ top: 350, left: '15%' }} />
-
       {/* ── Eyebrow ── */}
       <p className="hero-eyebrow font-display text-[0.8rem] italic tracking-[0.18em] uppercase text-wood-brown mb-6">
         The Real-Life RPG
@@ -29,20 +13,21 @@ export default function HeroSection() {
 
       {/* ── Headline ── */}
       <h1
-        className="hero-headline font-display font-extrabold leading-[1.18] text-dark-ink max-w-[800px] mx-auto mb-6"
-        style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}
+        className="hero-headline font-display font-extrabold leading-[1.18] text-dark-ink max-w-200 mx-auto mb-6"
+        style={{ fontSize: "clamp(2rem, 5vw, 4rem)" }}
       >
-        Turn Every Hour You Practice Into{' '}
+        Turn Every Hour You Practice Into{" "}
         <em className="text-brand-primary italic">Undeniable Progress</em>
       </h1>
 
       {/* ── Sub-copy ── */}
       <p
-        className="hero-sub font-body leading-[1.85] text-text-parchment max-w-[580px] mx-auto mb-10"
-        style={{ fontSize: 'clamp(1rem, 1.8vw, 1.15rem)' }}
+        className="hero-sub font-body leading-[1.85] text-text-parchment max-w-145 mx-auto mb-10"
+        style={{ fontSize: "clamp(1rem, 1.8vw, 1.15rem)" }}
       >
-        Skill Log is a free RPG-style tracker that converts your real habits, quests, and
-        sessions into XP. Level up your actual skills — one session at a time.
+        Skill Log is a free RPG-style tracker that converts your real habits,
+        quests, and sessions into XP. Level up your actual skills — one session
+        at a time.
       </p>
 
       {/* ── Animated XP bar ── */}
@@ -66,9 +51,11 @@ export default function HeroSection() {
 
       {/* ── Reassurance note ── */}
       <p className="hero-note font-body italic text-[0.78rem] tracking-[0.06em] text-text-parchment mt-5">
-        Free forever ·{' '}
-        <span className="text-wood-brown font-semibold not-italic">All core features included</span>
-        {' '}· No account required
+        Free forever ·{" "}
+        <span className="text-wood-brown font-semibold not-italic">
+          All core features included
+        </span>{" "}
+        · No account required
       </p>
 
       {/* ── Landscape illustration ── */}
