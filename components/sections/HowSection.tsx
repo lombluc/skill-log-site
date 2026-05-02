@@ -160,57 +160,61 @@ export default function HowSection() {
   return (
     <section ref={sectionRef} className="section-how relative">
       <div className="section-inner">
-        {/* Eyebrow */}
-        <span className="reveal block font-display text-[0.72rem] italic tracking-[0.22em] uppercase text-brand-primary mb-3">
-          The System
-        </span>
+        <div className="section-padding-mid">
+          {/* Eyebrow */}
+          <span className="reveal block font-display text-[0.72rem] italic tracking-[0.22em] uppercase text-brand-primary mb-3">
+            The System
+          </span>
 
-        {/* Title */}
-        <h2
-          className="reveal font-display font-bold leading-[1.22] text-dark-ink"
-          style={{ fontSize: "clamp(1.65rem, 3.5vw, 2.65rem)" }}
-        >
-          Four Steps to{" "}
-          <em className="text-brand-primary italic">Start Levelling Up</em>{" "}
-          Today
-        </h2>
+          {/* Title */}
+          <h2
+            className="reveal font-display font-bold leading-[1.22] text-dark-ink"
+            style={{ fontSize: "clamp(1.65rem, 3.5vw, 2.65rem)" }}
+          >
+            Four Steps to{" "}
+            <em className="text-brand-primary italic">Start Levelling Up</em>{" "}
+            Today
+          </h2>
+        </div>
 
-        {/* Steps grid */}
-        <div
-          className="mt-16 relative"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-            gap: "2rem",
-          }}
-        >
-          <HowStep
-            num="I"
-            icon={CreateSkillIcon}
-            title="Create a Skill"
-            body={`Name anything you want to level up — "Guitar," "Coding," "Spanish," "Running." If it's worth your time, it's worth tracking.`}
-          />
-          <HowStep
-            num="II"
-            icon={StartTimerIcon}
-            title="Start the Timer"
-            body="Tap once. The XP clock begins. Every minute you put in is real-life experience accumulating on your skill. Time becomes tangible."
-            delayClass="reveal-delay-1"
-          />
-          <HowStep
-            num="III"
-            icon={LevelUpIcon}
-            title="Watch Yourself Level Up"
-            body="XP graphs, skill breakdowns, weekly dashboards. Watch your progress become undeniable. Stay motivated — session after session."
-            delayClass="reveal-delay-2"
-          />
-          <HowStep
-            num="IV"
-            icon={QuestsIcon}
-            title="Complete Quests"
-            body="Turn goals into structured quests. Break big ambitions into tasks with clear progress. No more vague ambition — just a quest log you're actually completing."
-            delayClass="reveal-delay-3"
-          />
+        <div className="section-padding-mid">
+          {/* Steps grid */}
+          <div
+            className="mt-16 relative"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+              gap: "2rem",
+            }}
+          >
+            <HowStep
+              num="I"
+              icon={CreateSkillIcon}
+              title="Create a Skill"
+              body={`Name anything you want to level up — "Guitar," "Coding," "Spanish," "Running." If it's worth your time, it's worth tracking.`}
+            />
+            <HowStep
+              num="II"
+              icon={StartTimerIcon}
+              title="Start the Timer"
+              body="Tap once. The XP clock begins. Every minute you put in is real-life experience accumulating on your skill. Time becomes tangible."
+              delayClass="reveal-delay-1"
+            />
+            <HowStep
+              num="III"
+              icon={LevelUpIcon}
+              title="Watch Yourself Level Up"
+              body="XP graphs, skill breakdowns, weekly dashboards. Watch your progress become undeniable. Stay motivated — session after session."
+              delayClass="reveal-delay-2"
+            />
+            <HowStep
+              num="IV"
+              icon={QuestsIcon}
+              title="Complete Quests"
+              body="Turn goals into structured quests. Break big ambitions into tasks with clear progress. No more vague ambition — just a quest log you're actually completing."
+              delayClass="reveal-delay-3"
+            />
+          </div>
         </div>
       </div>
     </section>

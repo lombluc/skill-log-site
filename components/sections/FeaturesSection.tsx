@@ -273,36 +273,32 @@ export default function FeaturesSection() {
   return (
     <section ref={sectionRef} className="section-features relative">
       <div className="section-inner">
-        {/* Eyebrow */}
-        <span className="reveal block font-display text-[0.72rem] italic tracking-[0.22em] uppercase text-brand-primary mb-3">
-          Your Arsenal
-        </span>
+        <div className="section-padding-mid">
+          {/* Eyebrow */}
+          <span className="reveal block font-display text-[0.72rem] italic tracking-[0.22em] uppercase text-brand-primary mb-3">
+            Your Arsenal
+          </span>
 
-        {/* Title */}
-        <h2
-          className="reveal font-display font-bold leading-[1.22] text-dark-ink"
-          style={{ fontSize: "clamp(1.65rem, 3.5vw, 2.65rem)" }}
-        >
-          Every Tool You Need to{" "}
-          <em className="text-brand-primary italic">Level Up</em> For Real
-        </h2>
+          {/* Title */}
+          <h2
+            className="reveal font-display font-bold leading-[1.22] text-dark-ink"
+            style={{ fontSize: "clamp(1.65rem, 3.5vw, 2.65rem)" }}
+          >
+            Every Tool You Need to{" "}
+            <em className="text-brand-primary italic">Level Up</em> For Real
+          </h2>
 
-        {/* Lead copy */}
-        <p className="reveal text-[1.05rem] text-text-paper max-w-[560px] mt-6 mb-16">
-          Built for the productive gamer, the self-optimizer, the recovering
-          procrastinator. Whether you&apos;re studying, coding, training, or
-          building a creative skill from scratch — every feature is designed to
-          reward the effort of showing up.
-        </p>
+          {/* Lead copy */}
+          <p className="reveal text-[1.05rem] text-text-paper max-w-[560px] mt-6 mb-8">
+            Built for the productive gamer, the self-optimizer, the recovering
+            procrastinator. Whether you&apos;re studying, coding, training, or
+            building a creative skill from scratch — every feature is designed
+            to reward the effort of showing up.
+          </p>
+        </div>
 
-        {/* Features grid */}
-        <div
-          className="grid gap-6"
-          style={{
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-          }}
-        >
-          {/* Wide XP card — spans full width */}
+        {/* Wide XP card — spans full width */}
+        <div className="section-padding-wide pb-6">
           <FeatureCard
             variant="wide"
             tag="Core Mechanic"
@@ -311,7 +307,14 @@ export default function FeaturesSection() {
           >
             {SkillBarsIllustration}
           </FeatureCard>
-
+        </div>
+        {/* Features grid */}
+        <div
+          className="grid gap-6 section-padding-wide"
+          style={{
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+          }}
+        >
           {/* Standard cards */}
           <FeatureCard
             tag="Visualization"

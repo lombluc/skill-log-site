@@ -46,37 +46,41 @@ export default function ProofSection() {
   return (
     <section ref={sectionRef} className="section-proof relative">
       <div className="section-inner">
-        {/* Eyebrow */}
-        <span className="reveal block font-display text-[0.72rem] italic tracking-[0.22em] uppercase text-wood-brown mb-3">
-          From the Guild
-        </span>
+        <div className="section-padding-mid">
+          {/* Eyebrow */}
+          <span className="reveal block font-display text-[0.72rem] italic tracking-[0.22em] uppercase text-wood-brown mb-3">
+            From the Guild
+          </span>
 
-        {/* Title */}
-        <h2
-          className="reveal font-display font-bold leading-[1.22] text-dark-ink"
-          style={{ fontSize: "clamp(1.65rem, 3.5vw, 2.65rem)" }}
-        >
-          These Are the Players Who Found{" "}
-          <em className="text-brand-primary italic">Their Feedback Loop</em>
-        </h2>
+          {/* Title */}
+          <h2
+            className="reveal font-display font-bold leading-[1.22] text-dark-ink"
+            style={{ fontSize: "clamp(1.65rem, 3.5vw, 2.65rem)" }}
+          >
+            These Are the Players Who Found{" "}
+            <em className="text-brand-primary italic">Their Feedback Loop</em>
+          </h2>
+        </div>
 
         {/* Quotes grid */}
-        <div
-          className="mt-14"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: "1.5rem",
-          }}
-        >
-          {QUOTES.map(({ quote, avatar, delay = "" }, i) => (
-            <QuoteCard
-              key={i}
-              quote={quote}
-              avatar={avatar}
-              delayClass={delay}
-            />
-          ))}
+        <div className="section-padding-wide">
+          <div
+            className="mt-14"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+              gap: "1.5rem",
+            }}
+          >
+            {QUOTES.map(({ quote, avatar, delay = "" }, i) => (
+              <QuoteCard
+                key={i}
+                quote={quote}
+                avatar={avatar}
+                delayClass={delay}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

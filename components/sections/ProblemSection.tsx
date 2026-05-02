@@ -133,63 +133,67 @@ export default function ProblemSection() {
   return (
     <section ref={sectionRef} className="section-problem relative">
       <div className="section-inner">
-        {/* Eyebrow */}
-        <span className="reveal block font-display text-[0.72rem] italic tracking-[0.22em] uppercase text-parchment-mid mb-3">
-          The Problem
-        </span>
+        <div className="section-padding-mid">
+          {/* Eyebrow */}
+          <span className="reveal block font-display text-[0.72rem] italic tracking-[0.22em] uppercase text-parchment-mid mb-3">
+            The Problem
+          </span>
 
-        {/* Title */}
-        <h2
-          className="reveal font-display font-bold leading-[1.22] text-parchment-light"
-          style={{ fontSize: "clamp(1.65rem, 3.5vw, 2.65rem)" }}
-        >
-          You&apos;re Grinding Every Day.
-          <br />
-          But You Have Nothing to{" "}
-          <em className="text-brand-primary italic">Show For It.</em>
-        </h2>
+          {/* Title */}
+          <h2
+            className="reveal font-display font-bold leading-[1.22] text-parchment-light"
+            style={{ fontSize: "clamp(1.65rem, 3.5vw, 2.65rem)" }}
+          >
+            You&apos;re Grinding Every Day.
+            <br />
+            But You Have Nothing to{" "}
+            <em className="text-brand-primary italic">Show For It.</em>
+          </h2>
 
-        {/* Lead */}
-        <p
-          className="reveal text-[1.05rem] max-w-[580px] mt-6 mb-14"
-          style={{ color: "rgba(242, 221, 176, 0.72)" }}
-        >
-          The hours go in. The skills slowly improve. But there&apos;s no
-          record, no graph, no level — nothing to make the growth feel real.
-          That&apos;s not a motivation problem. That&apos;s a missing feedback
-          loop.
-        </p>
+          {/* Lead */}
+          <p
+            className="reveal text-[1.05rem] max-w-[580px] mt-6 mb-14"
+            style={{ color: "rgba(242, 221, 176, 0.72)" }}
+          >
+            The hours go in. The skills slowly improve. But there&apos;s no
+            record, no graph, no level — nothing to make the growth feel real.
+            That&apos;s not a motivation problem. That&apos;s a missing feedback
+            loop.
+          </p>
+        </div>
 
-        {/* Pain grid */}
-        <div
-          className="grid gap-6"
-          style={{
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-          }}
-        >
-          <PainCard
-            num="01"
-            icon={NoProgressIcon}
-            title="No Visible Progress"
-            body="You practice. You improve. But without a record, every session disappears into the void. Six months later, you genuinely can't tell how far you've come — and that's demoralising."
-            quote={`"I know I've been putting in the hours. I just can't see it."`}
-          />
-          <PainCard
-            num="02"
-            icon={RobotAppsIcon}
-            title="Apps Built for Robots"
-            body="Every productivity tool feels like an accountant's spreadsheet. There's no joy, no narrative, no reward for doing the work. You open it, feel nothing, and close it."
-            quote={`"I've tried every app. None of them made me want to keep going."`}
-            delayClass="reveal-delay-1"
-          />
-          <PainCard
-            num="03"
-            icon={TooManyGoalsIcon}
-            title="Too Many Goals, No Quest"
-            body="You have ambitions — coding, fitness, a side project, a language. But they sit in your head, formless. Without structure, big goals stay wishes. And wishes don't get completed."
-            quote={`"I know what I want. I just can't seem to make real progress on it."`}
-            delayClass="reveal-delay-2"
-          />
+        <div className="section-padding-wide">
+          {/* Pain grid */}
+          <div
+            className="grid gap-6"
+            style={{
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            }}
+          >
+            <PainCard
+              num="01"
+              icon={NoProgressIcon}
+              title="No Visible Progress"
+              body="You practice. You improve. But without a record, every session disappears into the void. Six months later, you genuinely can't tell how far you've come — and that's demoralising."
+              quote={`"I know I've been putting in the hours. I just can't see it."`}
+            />
+            <PainCard
+              num="02"
+              icon={RobotAppsIcon}
+              title="Apps Built for Robots"
+              body="Every productivity tool feels like an accountant's spreadsheet. There's no joy, no narrative, no reward for doing the work. You open it, feel nothing, and close it."
+              quote={`"I've tried every app. None of them made me want to keep going."`}
+              delayClass="reveal-delay-1"
+            />
+            <PainCard
+              num="03"
+              icon={TooManyGoalsIcon}
+              title="Too Many Goals, No Quest"
+              body="You have ambitions — coding, fitness, a side project, a language. But they sit in your head, formless. Without structure, big goals stay wishes. And wishes don't get completed."
+              quote={`"I know what I want. I just can't seem to make real progress on it."`}
+              delayClass="reveal-delay-2"
+            />
+          </div>
         </div>
       </div>
     </section>
