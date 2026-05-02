@@ -133,6 +133,16 @@ html {
   50%       { opacity: 1;   transform: scale(1.2); }
 }
 
+@keyframes cloudDrift {
+  from { transform: translateX(110vw); }
+  to   { transform: translateX(-110%); }
+}
+
+@keyframes cloudDriftMirror {
+  from { transform: scaleX(-1) translateX(110vw); }
+  to   { transform: scaleX(-1) translateX(-110%); }
+}
+
 /* ─────────────────────────────────────────
    ANIMATION HELPER CLASSES
 ───────────────────────────────────────── */
@@ -140,6 +150,12 @@ html {
 .sparkle-1  { animation: sparkle 2.2s 0.3s   ease-in-out infinite; }
 .sparkle-2  { animation: sparkle 2.8s 0.9s   ease-in-out infinite; }
 .sparkle-3  { animation: sparkle 3.1s 1.5s   ease-in-out infinite; }
+
+.cloud-drift        { animation: cloudDrift        linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cloud-drift { animation-play-state: paused; }
+}
 
 /* ─────────────────────────────────────────
    SCROLL REVEAL
@@ -164,8 +180,8 @@ html {
   background: linear-gradient(
     180deg,
     #B8E4EF                  0%,
-    #C8EBF2                  18%,
-    var(--cloud-light)       42%,
+    #C8EBF2                  42%,
+    /* var(--cloud-light)       42%, */
     var(--parchment-light)   70%,
     var(--cork-primary)      100%
   );
@@ -175,10 +191,10 @@ html {
   content: '';
   position: absolute;
   top: 8%; left: -5%;
-  width: 55%; height: 220px;
+  width: 70%; height: 300px;
   background:
     radial-gradient(ellipse at 30% 50%, rgba(255,231,181,0.55) 0%, transparent 70%),
-    radial-gradient(ellipse at 70% 40%, rgba(254,208,156,0.40) 0%, transparent 65%);
+    radial-gradient(ellipse at 70% 40%, rgba(254,208,156,0.40) 0%, transparent 40%);
   pointer-events: none;
 }
 
