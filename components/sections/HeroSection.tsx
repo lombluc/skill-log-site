@@ -2,6 +2,8 @@
 
 import HeroXpBar from "@/components/ui/HeroXpBar";
 import HeroLandscape from "@/components/ui/HeroLandscape";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -212,19 +214,37 @@ export default function HeroSection() {
       <HeroXpBar />
 
       {/* ── CTA buttons ── */}
-      <div className="hero-btns flex gap-4 justify-center flex-wrap">
-        <a
-          href="https://apps.apple.com"
-          className="font-display text-[0.88rem] font-bold tracking-[0.06em] uppercase text-white bg-brand-primary px-[2.2rem] py-4 rounded no-underline shadow-[0_4px_20px_rgba(234,77,88,0.35)] transition-[background,transform,box-shadow] duration-200 hover:bg-wood-brown hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(92,61,30,0.3)]"
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-4 items-center justify-center">
+        {/* App Store Button */}
+        <Link
+          href=""
+          target="_blank"
+          className="hover:scale-105 active:scale-95 transition-transform duration-400 z-21"
         >
-          ↓ Download on App Store
-        </a>
-        <a
-          href="https://play.google.com/store"
-          className="font-display text-[0.88rem] font-semibold tracking-[0.06em] uppercase text-wood-brown bg-transparent px-[2.2rem] py-4 rounded no-underline border-[1.5px] border-wood-brown/35 transition-[border-color,transform,background,color] duration-200 hover:border-brand-primary hover:text-brand-primary hover:-translate-y-0.5 hover:bg-brand-primary/5"
+          <Image
+            src="/svg/app-store-button.svg"
+            alt="Download on the App Store"
+            width={210}
+            height={70}
+            priority
+            className="h-16 sm:h-16 md:h-19 w-auto"
+          />
+        </Link>
+
+        {/* Google Play Button */}
+        <Link
+          href=""
+          target="_blank"
+          className="hover:scale-105 active:scale-95 transition-transform duration-400 z-21"
         >
-          ↓ Get it on Google Play
-        </a>
+          <Image
+            src="/svg/google-play-button.svg"
+            alt="Get it on Google Play"
+            width={237}
+            height={70}
+            className="h-16 sm:h-16 md:h-19 w-auto"
+          />
+        </Link>
       </div>
 
       {/* ── Reassurance note ── */}
