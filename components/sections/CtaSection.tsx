@@ -11,7 +11,7 @@ export default function CtaSection() {
       ref={sectionRef}
       className="section-cta relative overflow-hidden text-center"
     >
-      <div className="max-w-section mx-auto px-8 py-32">
+      <div className="max-w-section mx-auto px-8 py-24">
         {/* Eyebrow */}
         <span className="reveal block font-display text-[0.72rem] italic tracking-[0.22em] uppercase text-parchment-mid mb-3">
           Your Quest Awaits
@@ -29,7 +29,7 @@ export default function CtaSection() {
 
         {/* Sub-copy */}
         <p
-          className="reveal text-[1.05rem] max-w-[540px] mx-auto mb-12 leading-[1.85]"
+          className="reveal text-[1.05rem] max-w-135 mx-auto mb-12 leading-[1.85]"
           style={{ color: "rgba(242, 221, 176, 0.68)" }}
         >
           Every level-up begins with a single session. Open Skill Log, name your
@@ -40,36 +40,20 @@ export default function CtaSection() {
         {/* CTA buttons */}
         <div className="reveal flex gap-4 justify-center flex-wrap mb-6">
           <a
-            href="https://apps.apple.com"
+            href="#"
             className="font-display text-[0.88rem] font-bold tracking-[0.06em] uppercase bg-parchment-light text-dark-ink px-[2.2rem] py-4 rounded no-underline shadow-[0_4px_20px_rgba(0,0,0,0.2)] transition-[background,transform] duration-200 hover:bg-cloud-light hover:-translate-y-0.5"
           >
-            ↓ Download on App Store
-          </a>
-          <a
-            href="https://play.google.com/store"
-            className="font-display text-[0.88rem] font-semibold tracking-[0.06em] uppercase text-parchment-light bg-transparent px-[2.2rem] py-4 rounded no-underline transition-[border-color,transform] duration-200 hover:border-parchment-mid hover:-translate-y-0.5"
-            style={{ border: "1.5px solid rgba(242,221,176,0.35)" }}
-          >
-            ↓ Get it on Google Play
+            ↓ Download Now
           </a>
         </div>
 
         {/* Fine print */}
         <p
-          className="reveal font-display italic text-[0.72rem] tracking-[0.1em] uppercase mt-6"
+          className="reveal font-display italic text-[0.72rem] tracking-widest uppercase mt-6"
           style={{ color: "rgba(242,221,176,0.38)" }}
         >
           Free forever · All core features included · Your data is private and
-          will never be sold · Contact:{" "}
-          <a
-            href="mailto:contact@skill-log.com"
-            style={{
-              color: "rgba(242,221,176,0.50)",
-              textDecoration: "underline",
-            }}
-          >
-            contact@skill-log.com
-          </a>
+          will never be sold
         </p>
       </div>
     </section>

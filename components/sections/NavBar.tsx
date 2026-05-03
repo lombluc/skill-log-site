@@ -8,8 +8,8 @@ export default function NavBar() {
     <nav
       className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-10 py-4 backdrop-blur-[10px] border-b"
       style={{
-        background: 'rgba(255, 248, 231, 0.88)',
-        borderColor: 'rgba(200, 148, 90, 0.25)',
+        background: "rgba(255, 248, 231, 0.88)",
+        borderColor: "rgba(200, 148, 90, 0.25)",
       }}
     >
       {/* Logo */}
