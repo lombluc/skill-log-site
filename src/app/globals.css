@@ -330,24 +330,25 @@ html {
 }
 
 @layer base {
-  /* 1. Global Styles for Chrome, Edge, and Safari */
+  /* Chrome, Edge, Safari */
   ::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
   }
   ::-webkit-scrollbar-track {
-    @apply bg-slate-100;
+    background: var(--paper-mid);
   }
   ::-webkit-scrollbar-thumb {
-    @apply bg-sb-scroll rounded-full border-3 border-sb-bg;
+    background: var(--cork-secondary);
+    border-radius: 9999px;
+    border: 2px solid var(--paper-mid);
   }
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-amber-900;
+    background: var(--wood-brown);
   }
 
-  /* 2. Global Styles for Firefox */
+  /* Firefox */
   * {
-    /* scrollbar-color: [Thumb Color] [Track Color] */
-    scrollbar-color: theme('colors.sb-scroll') theme('colors.sb-bg');
-    scrollbar-width: thin; /* Options: auto, thin, none */
+    scrollbar-color: var(--cork-secondary) var(--paper-mid);
+    scrollbar-width: thin;
   }
 }
