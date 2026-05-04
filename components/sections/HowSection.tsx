@@ -165,21 +165,15 @@ export default function HowSection() {
           </h2>
         </div>
 
-        <div className="section-padding-mid">
+        <div className="section-padding-wide">
           {/* Steps grid */}
-          <div
-            className="mt-16 relative"
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-              gap: "2rem",
-            }}
-          >
+          <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-0">
             <HowStep
               num="I"
               icon={CreateSkillIcon}
               title="Create a Skill"
               body={`Name anything you want to level up: "Guitar," "Coding," "Spanish," "Running." If it's worth your time, it's worth tracking.`}
+              isFirst
             />
             <HowStep
               num="II"
@@ -201,6 +195,7 @@ export default function HowSection() {
               title="Complete Quests"
               body="Turn goals into structured quests. Break big ambitions into tasks with clear progress. Turn you vague ambition into a quest log you're actually completing."
               delayClass="reveal-delay-3"
+              isLast
             />
           </div>
         </div>
