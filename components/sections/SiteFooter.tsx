@@ -1,30 +1,28 @@
 export default function SiteFooter() {
   return (
     <footer
-      className="py-10 px-8 text-center font-display italic text-[0.72rem] tracking-[0.1em] uppercase"
+      className="py-10 px-8 text-center font-display italic text-[0.72rem] tracking-widest"
       style={{
         background: "var(--wood-footer)",
         color: "rgba(242, 221, 176, 0.28)",
       }}
     >
-      <div className="flex justify-between items-center flex-wrap gap-4 max-w-[900px] mx-auto md:flex-row flex-col text-center">
-        <span>✦ Skill Log &copy; 2025</span>
+      <div className="flex justify-between items-center gap-6 max-w-6xl mx-auto px-6 md:flex-row flex-col">
+        <span>© 2026 Lucere Acuity Ltd. All rights reserved.</span>
 
         <span>
-          <a href="mailto:contact@skill-log.com" className="footer-link">
+          <a href="/privacy" className="footer-link">
+            Privacy
+          </a>
+          &nbsp;·&nbsp;
+          <a href="/contact" className="footer-link">
             Contact
           </a>
           &nbsp;·&nbsp;
-          <a href="#" className="footer-link">
-            Privacy Policy
-          </a>
-          &nbsp;·&nbsp;
-          <a href="#" className="footer-link">
+          <a href="/terms" className="footer-link">
             Terms
           </a>
         </span>
-
-        <span>Built for the Life-Gamer</span>
       </div>
     </footer>
   );
