@@ -16,7 +16,7 @@ export default function Page() {
         <ProblemSection />
         <HowSection />
         <FeaturesSection />
-        <ProofSection />
+        {/* <ProofSection /> */}
         <CtaSection />
       </main>
       <SiteFooter />

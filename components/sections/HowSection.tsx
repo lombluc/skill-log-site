@@ -179,7 +179,7 @@ export default function HowSection() {
               num="I"
               icon={CreateSkillIcon}
               title="Create a Skill"
-              body={`Name anything you want to level up — "Guitar," "Coding," "Spanish," "Running." If it's worth your time, it's worth tracking.`}
+              body={`Name anything you want to level up: "Guitar," "Coding," "Spanish," "Running." If it's worth your time, it's worth tracking.`}
             />
             <HowStep
               num="II"
@@ -192,14 +192,14 @@ export default function HowSection() {
               num="III"
               icon={LevelUpIcon}
               title="Watch Yourself Level Up"
-              body="XP graphs, skill breakdowns, weekly dashboards. Watch your progress become undeniable. Stay motivated — session after session."
+              body="XP graphs, skill breakdowns, weekly dashboards. Watch your progress become undeniable. Stay motivated session after session."
               delayClass="reveal-delay-2"
             />
             <HowStep
               num="IV"
               icon={QuestsIcon}
               title="Complete Quests"
-              body="Turn goals into structured quests. Break big ambitions into tasks with clear progress. No more vague ambition — just a quest log you're actually completing."
+              body="Turn goals into structured quests. Break big ambitions into tasks with clear progress. Turn you vague ambition into a quest log you're actually completing."
               delayClass="reveal-delay-3"
             />
           </div>

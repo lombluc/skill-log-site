@@ -203,10 +203,11 @@ export default function ProblemSection() {
             className="reveal text-[1.05rem] max-w-145 mt-6 mb-14"
             style={{ color: "rgba(242, 221, 176, 0.72)" }}
           >
-            The hours go in. The skills slowly improve. But there&apos;s no
+            You can grind away on videogame characters for hours, but you
+            can&apos;t manage to do the same for your own life. There&apos;s no
             record, no graph, no level — nothing to make the growth feel real.
-            That&apos;s not a motivation problem. That&apos;s a missing feedback
-            loop.
+            You don&apos;t have a motivation problem. You&apos;re missing a
+            feedback loop.
           </p>
         </div>
 
@@ -221,7 +222,7 @@ export default function ProblemSection() {
             <PainCard
               icon={NoProgressIcon}
               title="No Visible Progress"
-              body="You practice. You improve. But without a record, every session disappears into the void. Six months later, you genuinely can't tell how far you've come — and that's demoralising."
+              body="You practice, but do you improve? Without a record, every session disappears into the void. Six months later, you genuinely can't tell how far you've come — and that's demoralising."
               quote={`"I know I've been putting in the hours. I just can't see it."`}
             />
             <PainCard

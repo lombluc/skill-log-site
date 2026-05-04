@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="hero relative min-h-screen flex flex-col items-center justify-center text-center pt-32 px-8 overflow-hidden">
+    <section className="hero relative flex flex-col items-center justify-center text-center pt-32 px-8 overflow-hidden">
       {/* ── Cloud background ── */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         {/* top zone: small & sparse */}
@@ -186,75 +186,77 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* ── Eyebrow ── */}
-      <p className="hero-eyebrow font-display text-[0.8rem] italic tracking-[0.18em] uppercase text-wood-brown mb-6">
-        The Real-Life RPG
-      </p>
+      <div className="min-h-screen">
+        {/* ── Eyebrow ── */}
+        <p className="hero-eyebrow font-display text-[0.8rem] italic tracking-[0.18em] uppercase text-wood-brown mb-6">
+          The Real-Life RPG
+        </p>
 
-      {/* ── Headline ── */}
-      <h1
-        className="hero-headline font-display font-extrabold leading-[1.18] text-dark-ink max-w-200 mx-auto mb-6"
-        style={{ fontSize: "clamp(2rem, 5vw, 4rem)" }}
-      >
-        Turn Every Hour You Practice Into{" "}
-        <em className="text-brand-primary italic">Undeniable Progress</em>
-      </h1>
-
-      {/* ── Sub-copy ── */}
-      <p
-        className="hero-sub font-body leading-[1.85] text-text-parchment max-w-145 mx-auto mb-10"
-        style={{ fontSize: "clamp(1rem, 1.8vw, 1.15rem)" }}
-      >
-        Skill Log is a free RPG-style tracker that converts your real habits,
-        quests, and sessions into XP. Level up your actual skills — one session
-        at a time.
-      </p>
-
-      {/* ── Animated XP bar ── */}
-      <HeroXpBar />
-
-      {/* ── CTA buttons ── */}
-      <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-4 items-center justify-center">
-        {/* App Store Button */}
-        <Link
-          href=""
-          target="_blank"
-          className="hover:scale-105 active:scale-95 transition-transform duration-400 z-21"
+        {/* ── Headline ── */}
+        <h1
+          className="hero-headline font-display font-extrabold leading-[1.18] text-dark-ink max-w-200 mx-auto mb-6"
+          style={{ fontSize: "clamp(2rem, 5vw, 4rem)" }}
         >
-          <Image
-            src="/svg/app-store-button.svg"
-            alt="Download on the App Store"
-            width={210}
-            height={70}
-            priority
-            className="h-16 sm:h-16 md:h-19 w-auto"
-          />
-        </Link>
+          Turn Every Hour Into{" "}
+          <em className="text-brand-primary italic">Undeniable Progress</em>
+        </h1>
 
-        {/* Google Play Button */}
-        <Link
-          href=""
-          target="_blank"
-          className="hover:scale-105 active:scale-95 transition-transform duration-400 z-21"
+        {/* ── Sub-copy ── */}
+        <p
+          className="hero-sub font-body leading-[1.85] text-text-parchment max-w-145 mx-auto mb-10"
+          style={{ fontSize: "clamp(1rem, 1.8vw, 1.15rem)" }}
         >
-          <Image
-            src="/svg/google-play-button.svg"
-            alt="Get it on Google Play"
-            width={237}
-            height={70}
-            className="h-16 sm:h-16 md:h-19 w-auto"
-          />
-        </Link>
+          Skill Log is a free RPG-style tracker that converts your real habits,
+          quests, and sessions into XP. Level up your actual skills — one
+          session at a time.
+        </p>
+
+        {/* ── Animated XP bar ── */}
+        <HeroXpBar />
+
+        {/* ── CTA buttons ── */}
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-4 items-center justify-center">
+          {/* App Store Button */}
+          <Link
+            href=""
+            target="_blank"
+            className="hover:scale-105 active:scale-95 transition-transform duration-400 z-21"
+          >
+            <Image
+              src="/svg/app-store-button.svg"
+              alt="Download on the App Store"
+              width={210}
+              height={70}
+              priority
+              className="h-16 sm:h-16 md:h-19 w-auto"
+            />
+          </Link>
+
+          {/* Google Play Button */}
+          <Link
+            href=""
+            target="_blank"
+            className="hover:scale-105 active:scale-95 transition-transform duration-400 z-21"
+          >
+            <Image
+              src="/svg/google-play-button.svg"
+              alt="Get it on Google Play"
+              width={237}
+              height={70}
+              className="h-16 sm:h-16 md:h-19 w-auto"
+            />
+          </Link>
+        </div>
+
+        {/* ── Reassurance note ── */}
+        <p className="hero-note font-body italic text-[0.78rem] tracking-[0.06em] text-text-parchment mt-5">
+          No credit card needed ·{" "}
+          <span className="text-wood-brown font-semibold not-italic">
+            Core features always free
+          </span>{" "}
+          · Privacy first
+        </p>
       </div>
-
-      {/* ── Reassurance note ── */}
-      <p className="hero-note font-body italic text-[0.78rem] tracking-[0.06em] text-text-parchment mt-5">
-        Free forever ·{" "}
-        <span className="text-wood-brown font-semibold not-italic">
-          All core features included
-        </span>{" "}
-        · No account required
-      </p>
 
       {/* ── Landscape illustration ── */}
       <HeroLandscape />

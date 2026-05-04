@@ -52,8 +52,8 @@ export default function CtaSection() {
           className="reveal font-display italic text-[0.72rem] tracking-widest uppercase mt-6"
           style={{ color: "rgba(242,221,176,0.38)" }}
         >
-          Free forever · All core features included · Your data is private and
-          will never be sold
+          Free tier, always · All core features included · Your data is private
+          and will never be sold
         </p>
       </div>
     </section>

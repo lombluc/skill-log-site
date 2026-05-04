@@ -303,7 +303,7 @@ export default function FeaturesSection() {
             variant="wide"
             tag="Core Mechanic"
             title="XP System & Skill Leveling"
-            body={`Every session earns you experience points tied to your real-life skill — not abstract "productivity points." Watch your Coding skill hit Level 8. See your Spanish reach Level 5. The same dopamine loop that kept you grinding for 40 hours in a game, now tracking what actually matters.`}
+            body={`Every session earns you experience points tied to your real-life skill — not abstract "productivity points." Watch your Coding skill hit Level 8 and find yourself putting in that extra hour just to hit the next level. The same dopamine loop that kept you grinding for 40 hours in a game, now tracking what actually matters.`}
           >
             {SkillBarsIllustration}
           </FeatureCard>
@@ -319,7 +319,7 @@ export default function FeaturesSection() {
           <FeatureCard
             tag="Visualization"
             title="Progress Graphs & Analytics"
-            body="XP charts, skill breakdowns, and quest-specific data. Stop guessing whether you're improving — see the proof in a graph. Your growth is no longer invisible."
+            body="XP charts, skill breakdowns, and quest-specific data. Stop guessing whether you're improving and see the proof in a graph. Your growth is no longer invisible."
             icon={GraphIcon}
           />
           <FeatureCard
@@ -332,27 +332,27 @@ export default function FeaturesSection() {
           <FeatureCard
             tag="Objectives"
             title="Quests & Task Creation"
-            body="Define your goals as Quests. Break them into Tasks. Turn every ambition — learning a framework, finishing a creative project, completing a study plan — into structured, beatable objectives."
+            body="Set your Quest, break it down into Tasks. Turn your ambitions into an RPG adventure and see how much easier it is to complete."
             icon={QuestIcon}
             delayClass="reveal-delay-2"
           />
           <FeatureCard
             tag="Overview"
             title="Weekly Dashboards"
-            body="A high-level view of every win, every logged hour, every step forward across the full week. See how you distributed your time across skills and quests. Your story, told in data."
+            body="A high-level view of every logged hour, task completed, every step forward across the week. See how you distributed your time across skills and quests. Own your story."
             icon={DashboardIcon}
           />
           <FeatureCard
             tag="Record"
             title="Personal Ledger"
-            body="A flexible log of every activity, every session, every achievement. Build a digital record of everything you've invested in yourself — a timeline of your growth you can read back years from now."
+            body="A flexible log of every activity, every session, every achievement. Build a digital record of everything you've invested in yourself."
             icon={LedgerIcon}
             delayClass="reveal-delay-1"
           />
           <FeatureCard
             tag="Immersion"
             title="Fantasy-Crafted UI"
-            body='Designed to look and feel like an RPG, not another grey box wrapped in a "motivational" color palette. When the UI speaks your language, showing up stops being a chore and starts being part of the game.'
+            body="Hand-drawn background, parchment and icons. This is the only app that looks like it came from an actual sketchbook, not a productivity app with a fantasy colour palette."
             icon={UIIcon}
             delayClass="reveal-delay-2"
           />

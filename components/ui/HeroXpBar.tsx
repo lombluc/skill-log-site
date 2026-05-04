@@ -2,9 +2,9 @@ export default function HeroXpBar() {
   return (
     <div className="hero-xp flex flex-col gap-2 max-w-115 w-full mx-auto mb-10">
       {/* Label row */}
-      <div className="flex justify-between font-display text-[0.72rem] tracking-[0.14em] uppercase text-text-parchment">
+      <div className="flex justify-between font-display text-[0.72rem] tracking-[0.14em] uppercase text-text-parchment lining-nums">
         <span>Programming · Level 7</span>
-        <span>72 / 100 XP</span>
+        <span>72 / 108 XP</span>
       </div>
 
       {/* Track */}

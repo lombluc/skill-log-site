@@ -35,7 +35,7 @@ function PhoneFrame({
 
 export default function HeroLandscape() {
   return (
-    <div className="hero-landscape mt-16 pb-8 flex justify-center items-end md:-ml-120">
+    <div className="hero-landscape pb-8 flex justify-center items-end md:-ml-120">
       <PhoneFrame
         src="/images/tasksPage.png"
         alt="Tasks screen"
