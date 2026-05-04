@@ -1,6 +1,5 @@
 "use client";
 
-import SparkleIcon from "@/components/ui/SparkleIcon";
 import { useReveal } from "@/hooks/useReveal";
 
 export default function CtaSection() {
