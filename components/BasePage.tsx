@@ -1,15 +1,15 @@
 import React from "react";
-import Footer from "./Footer";
-import NavBar from "./NavBar";
+import SiteFooter from "./sections/SiteFooter";
+import NavBar from "./sections/NavBar";
 
 export default function BasePage({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen bg-background font-sans text-text-color">
+    <>
       <NavBar />
 
       {children}
 
-      <Footer />
-    </div>
+      <SiteFooter />
+    </>
   );
 }
