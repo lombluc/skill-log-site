@@ -1,4 +1,4 @@
-# Terms of Use for My App
+# Terms of Use for Skill Log
 
 **Last Updated:** March 3, 2026
 
