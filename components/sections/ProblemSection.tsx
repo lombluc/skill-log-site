@@ -205,8 +205,8 @@ export default function ProblemSection() {
           >
             You can grind away on videogame characters for hours, but you
             can&apos;t manage to do the same for your own life. There&apos;s no
-            record, no graph, no level — nothing to make the growth feel real.
-            You don&apos;t have a motivation problem. You&apos;re missing a
+            record, no graph, no level, nothing to make the growth feel real.
+            You don&apos;t have a motivation problem, you&apos;re just missing a
             feedback loop.
           </p>
         </div>
@@ -222,7 +222,7 @@ export default function ProblemSection() {
             <PainCard
               icon={NoProgressIcon}
               title="No Visible Progress"
-              body="You practice, but do you improve? Without a record, every session disappears into the void. Six months later, you genuinely can't tell how far you've come — and that's demoralising."
+              body="You practice, but do you improve? Without a record, every session disappears into the void. Six months later, you're demoralized because you can't see how far you've come."
               quote={`"I know I've been putting in the hours. I just can't see it."`}
             />
             <PainCard
@@ -235,7 +235,7 @@ export default function ProblemSection() {
             <PainCard
               icon={TooManyGoalsIcon}
               title="Too Many Goals, No Quest"
-              body="You have ambitions — coding, fitness, a side project, a language. But they sit in your head, formless. Without structure, big goals stay wishes. And wishes don't get completed."
+              body="You have ambitions: coding, fitness, a side project, a language. But they sit in your head, formless. Without structure, big goals stay wishes. And wishes don't get completed."
               quote={`"I know what I want. I just can't seem to make real progress on it."`}
               delayClass="reveal-delay-2"
             />

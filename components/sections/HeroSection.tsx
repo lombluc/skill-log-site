@@ -207,8 +207,8 @@ export default function HeroSection() {
           style={{ fontSize: "clamp(1rem, 1.8vw, 1.15rem)" }}
         >
           Skill Log is a free RPG-style tracker that converts your real habits,
-          quests, and sessions into XP. Level up your actual skills — one
-          session at a time.
+          quests, and sessions into XP. Put in the work and watch yourself level
+          up.
         </p>
 
         {/* ── Animated XP bar ── */}
