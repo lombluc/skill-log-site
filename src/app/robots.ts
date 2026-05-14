@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/private/", "/contact/", "/privacy/", "/terms/"],
     },
-    sitemap: "https://skill-log.com/sitemap.xml",
+    sitemap: "https://skillorum.com/sitemap.xml",
   };
 }

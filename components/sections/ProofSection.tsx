@@ -11,7 +11,7 @@ const QUOTES: { quote: string; avatar: string; delay?: string }[] = [
   },
   {
     quote:
-      "I want to look back a year from now and see a graph of how much I've grown. Skill Log is the only app that actually builds that graph for me.",
+      "I want to look back a year from now and see a graph of how much I've grown. Skillorum is the only app that actually builds that graph for me.",
     avatar: "✦ Student, Lv. 9 in Spanish",
     delay: "reveal-delay-1",
   },
@@ -23,7 +23,7 @@ const QUOTES: { quote: string; avatar: string; delay?: string }[] = [
   },
   {
     quote:
-      "Life is the hardest RPG I've ever played. I just needed a better UI. Skill Log is that UI.",
+      "Life is the hardest RPG I've ever played. I just needed a better UI. Skillorum is that UI.",
     avatar: "✦ Digital Nomad, Lv. 7 in Guitar",
   },
   {

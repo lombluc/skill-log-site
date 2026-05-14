@@ -1,11 +1,11 @@
-# Privacy Policy for Skill Log
+# Privacy Policy for Skillorum
 
-**Effective Date:** April 30, 2026
+**Effective Date:** May 14, 2026
 
 This Privacy Policy describes how Lucere Acuity Ltd ("we", "us", or "our") collects, uses, and shares your personal information. It covers two contexts:
 
-- Skill Log — our mobile application (the "App"), currently provided as a free service
-- Our website at skill-log.com (the "Site")
+- Skillorum — our mobile application (the "App"), currently provided as a free service
+- Our website at skillorum.com (the "Site")
 
 Please note that the App and the Site are separate services with different data practices; most of this Policy relates to the App. Website-specific practices are covered in Section 6.
 
@@ -140,7 +140,7 @@ We retain your personal information for as long as your account is active.
 Under App Store and Google Play regulations, you have the right to delete your account and associated data at any time. You can do this by:
 
 1. Navigating to **Settings** within the App and selecting **"Delete Account."**
-2. Alternatively, emailing us at **legal@skill-log.com** with the subject line "Data Deletion Request."
+2. Alternatively, emailing us at **legal@skillorum.com** with the subject line "Data Deletion Request."
 
 Once a deletion request is processed, your account data will be permanently removed from our active databases (Supabase) within **30 days**. Anonymised or aggregated data that cannot reasonably be used to identify you may be retained indefinitely.
 
@@ -180,7 +180,7 @@ During the login and registration flows within the App, **hCaptcha** may set coo
 
 ## 7. Your Privacy Rights
 
-Your rights depend on where you live. To exercise any of these rights, email us at **legal@skill-log.com**. We will respond within the timeframe required by your applicable law (generally 30 days, with the possibility of extension in complex cases).
+Your rights depend on where you live. To exercise any of these rights, email us at **legal@skillorum.com**. We will respond within the timeframe required by your applicable law (generally 30 days, with the possibility of extension in complex cases).
 
 ### 7.1 EEA and UK Residents (GDPR / UK GDPR)
 
@@ -204,7 +204,7 @@ You also have the right to lodge a complaint with your local supervisory authori
 
 ### 7.3 Brazil Residents (LGPD)
 
-Under Brazil's Lei Geral de Proteção de Dados (LGPD), you have the right to: confirm whether we process your data; access your data; correct incomplete or inaccurate data; anonymise, block, or delete unnecessary data; request data portability; be informed about third parties with whom we share data; and withdraw consent at any time. To exercise these rights, contact us at **legal@skill-log.com**.
+Under Brazil's Lei Geral de Proteção de Dados (LGPD), you have the right to: confirm whether we process your data; access your data; correct incomplete or inaccurate data; anonymise, block, or delete unnecessary data; request data portability; be informed about third parties with whom we share data; and withdraw consent at any time. To exercise these rights, contact us at **legal@skillorum.com**.
 
 ### 7.4 Canadian Residents (PIPEDA / Quebec Law 25)
 
@@ -224,7 +224,7 @@ Regardless of your location, you may contact us at any time to request access to
 
 The App is not directed to children. The minimum age to use the App is **13 years old**, or the higher minimum age required in your jurisdiction (for example, 16 in certain EU member states, or 14 in Brazil and South Korea). We do not knowingly collect personal information from anyone below the applicable minimum age. If we discover that we have collected data from an underage user, we will delete it promptly.
 
-If you are a parent or guardian and believe your child has provided us with personal data, please contact us at **legal@skill-log.com**.
+If you are a parent or guardian and believe your child has provided us with personal data, please contact us at **legal@skillorum.com**.
 
 ---
 
@@ -238,6 +238,6 @@ We may update this Privacy Policy from time to time. We will notify you of **mat
 
 If you have any questions, requests, or complaints about this Privacy Policy or how we handle your data, please contact us at:
 
-**Email:** legal@skill-log.com
+**Email:** legal@skillorum.com
 
-This Privacy Policy covers both the Skill Log mobile application and the Skill Log website skill-log.com. If your enquiry relates specifically to the website contact form, the same email address applies.
+This Privacy Policy covers both the Skillorum mobile application and the Skillorum website skillorum.com. If your enquiry relates specifically to the website contact form, the same email address applies.

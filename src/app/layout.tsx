@@ -25,9 +25,9 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Skill Log — Turn Your Real Life Into an RPG",
+  title: "Skillorum — Turn Your Real Life Into an RPG",
   description:
-    "Skill Log is the free RPG skill tracker that turns your real-life habits, quests, and tasks into XP. Level up your real skills. Track time. Stay motivated. Download free.",
+    "Skillorum is the free RPG skill tracker that turns your real-life habits, quests, and tasks into XP. Level up your real skills. Track time. Stay motivated. Download free.",
 };
 
 export default function RootLayout({

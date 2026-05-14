@@ -31,7 +31,7 @@ export default function CtaSection() {
           className="reveal text-[1.05rem] max-w-135 mx-auto mb-12 leading-[1.85]"
           style={{ color: "rgba(242, 221, 176, 0.68)" }}
         >
-          Every level-up begins with a single session. Open Skill Log, name your
+          Every level-up begins with a single session. Open Skillorum, name your
           first real-life skill, and start the timer. Your progress graph starts
           the moment you do.
         </p>

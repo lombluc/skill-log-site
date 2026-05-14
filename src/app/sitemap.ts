@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://skill-log.com";
+  const baseUrl = "https://skillorum.com";
 
   return [
     {

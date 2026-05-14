@@ -1,14 +1,14 @@
-# Terms of Use for Skill Log
+# Terms of Use for Skillorum
 
 **Last Updated:** March 3, 2026
 
-These Terms of Use ("Terms") constitute a legally binding agreement between you and Lucere Acuity Ltd ("we," "us," or "our") regarding your use of the Skill Log mobile application (the "App"). 
+These Terms of Use ("Terms") constitute a legally binding agreement between you and Lucere Acuity Ltd ("we," "us," or "our") regarding your use of the Skillorum mobile application (the "App"). 
 
 Please read these Terms carefully. By downloading, accessing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, you must immediately stop using the App.
 
 ## 1. Description of Service
 
-Skill Log is a gamified productivity application that allows users to set skills and quests, create linked tasks, and track their progress. The App is currently provided as a free service. We reserve the right to introduce advertisements or paid subscription tiers in the future. Any future paid features will be clearly communicated and may be subject to supplemental terms.
+Skillorum is a gamified productivity application that allows users to set skills and quests, create linked tasks, and track their progress. The App is currently provided as a free service. We reserve the right to introduce advertisements or paid subscription tiers in the future. Any future paid features will be clearly communicated and may be subject to supplemental terms.
 
 ## 2. Eligibility
 
@@ -69,5 +69,5 @@ We reserve the right to modify or replace these Terms at any time. If a revision
 
 If you have any questions, concerns, or feedback regarding these Terms, please contact us at:
 
-**Email:** legal@skill-log.com
+**Email:** legal@skillorum.com
 **Company:** Lucere Acuity Ltd

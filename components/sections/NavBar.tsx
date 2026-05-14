@@ -17,7 +17,7 @@ export default function NavBar() {
         href={path === "/" ? "#" : "/"}
         className="font-display text-[1.25rem] font-bold text-wood-brown tracking-[0.02em] no-underline"
       >
-        ✦ Skill <span className="text-brand-primary">Log</span>
+        <span className="text-brand-primary">Skillorum</span>
       </a>
 
       {/* CTA */}

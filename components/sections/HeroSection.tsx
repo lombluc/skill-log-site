@@ -206,7 +206,7 @@ export default function HeroSection() {
           className="hero-sub font-body leading-[1.85] text-text-parchment max-w-145 mx-auto mb-10"
           style={{ fontSize: "clamp(1rem, 1.8vw, 1.15rem)" }}
         >
-          Skill Log is a free RPG-style tracker that converts your real habits,
+          Skillorum is a free RPG-style tracker that converts your real habits,
           quests, and sessions into XP. Put in the work and watch yourself level
           up.
         </p>
