@@ -83,8 +83,15 @@ If you grant permission, the App may send you push notifications (for example, s
 | Delivering push notifications (if enabled) | Push token | Consent |
 | Delivering App updates | Device info via Expo | Legitimate interests |
 | Sending account-related emails (welcome email, verification, contact form replies) | Email | Performance of a contract / Legitimate Interests |
+| Sending product feedback requests and improvement surveys | Email | Legitimate interests |
 
-### 2.1 Future: Advertising (Free Tier)
+### 2.1 Feedback and Product Improvement Emails
+
+From time to time, we may email you to ask for your feedback on the App — for example, to understand how you use it or what improvements you would find most valuable. We do this on the basis of our legitimate interest in improving the product for our users. We will do this infrequently and will never use these emails to promote third-party products or services.
+
+You can opt out of feedback emails at any time by replying to any such email with "unsubscribe" or by contacting us at **legal@skillorum.com**. We will honour opt-out requests promptly.
+
+### 2.2 Future: Advertising (Free Tier)
 
 We intend to introduce advertising for free-tier users in the future. When we do:
 
@@ -92,7 +99,7 @@ We intend to introduce advertising for free-tier users in the future. When we do
 - **Before any ad-related tracking begins, we will update this Policy and implement a consent mechanism** (such as a consent management platform compliant with IAB TCF 2.2 for EEA/UK users, and ATT prompt on iOS) to obtain your permission where required by law.
 - You will be able to opt out of personalised advertising at any time via your device settings or within the App.
 
-### 2.2 Future: Paid Tier
+### 2.3 Future: Paid Tier
 
 We intend to introduce a paid subscription tier offering additional features (including cross-device syncing). When we do:
 

@@ -1,6 +1,6 @@
 # Terms of Use for Skillorum
 
-**Last Updated:** March 3, 2026
+**Last Updated:** May 14, 2026
 
 These Terms of Use ("Terms") constitute a legally binding agreement between you and Lucere Acuity Ltd ("we," "us," or "our") regarding your use of the Skillorum mobile application (the "App"). 
 
@@ -43,7 +43,7 @@ You agree not to engage in any of the following prohibited activities:
 
 ## 7. Privacy
 
-Your privacy is important to us. Our collection and use of personal data—including authentication details, diagnostic data via Firebase Crashlytics, and data stored via Supabase—are governed by our [Privacy Policy](/privacy). By using the App, you consent to the data practices described in our Privacy Policy.
+Your privacy is important to us. Our collection and use of personal data—including authentication details, diagnostic data via Firebase Crashlytics, and data stored via Supabase—are governed by our [Privacy Policy](/privacy). By using the App, you consent to the data practices described in our Privacy Policy. This includes the possibility that we may occasionally contact you by email to request feedback on the App. You may opt out of such communications at any time by contacting us at **legal@skillorum.com**.
 
 ## 8. Intellectual Property
 
