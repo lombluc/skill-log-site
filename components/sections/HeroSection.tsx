@@ -218,8 +218,9 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-4 items-center justify-center">
           {/* App Store Button */}
           <Link
-            href=""
+            href="https://apps.apple.com/us/app/skillorum/id6761835739"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:scale-105 active:scale-95 transition-transform duration-400 z-21"
           >
             <Image
@@ -234,8 +235,9 @@ export default function HeroSection() {
 
           {/* Google Play Button */}
           <Link
-            href=""
+            href="https://play.google.com/store/apps/details?id=com.lucereacuity.skilllog"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:scale-105 active:scale-95 transition-transform duration-400 z-21"
           >
             <Image
