@@ -11,6 +11,10 @@ export default function SiteFooter() {
         <span>© 2026 Lucere Acuity Ltd. All rights reserved.</span>
 
         <span>
+          <a href="/blog" className="footer-link">
+            Blog
+          </a>
+          &nbsp;·&nbsp;
           <a href="/privacy" className="footer-link">
             Privacy
           </a>
