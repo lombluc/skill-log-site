@@ -21,9 +21,9 @@ export default function CtaSection() {
           className="reveal font-display font-extrabold text-parchment-light leading-[1.2] mb-6"
           style={{ fontSize: "clamp(1.8rem, 4vw, 3.2rem)" }}
         >
-          A Year From Now,
+          A year from now,
           <br />
-          You&apos;ll Want Proof You Started Today.
+          you&apos;ll want proof you started today.
         </h2>
 
         {/* Sub-copy */}

@@ -284,8 +284,8 @@ export default function FeaturesSection() {
             className="reveal font-display font-bold leading-[1.22] text-dark-ink"
             style={{ fontSize: "clamp(1.65rem, 3.5vw, 2.65rem)" }}
           >
-            A Skill Tracker Built For{" "}
-            <em className="text-brand-primary italic">Consistent</em> Practice
+            A skill tracker built for{" "}
+            <em className="text-brand-primary italic">consistent</em> practice
           </h2>
 
           {/* Lead copy */}
@@ -302,8 +302,8 @@ export default function FeaturesSection() {
           <FeatureCard
             variant="wide"
             tag="Core Mechanic"
-            title="XP System & Skill Levelling"
-            body={`Every session earns you experience points tied to your real-life skill — not abstract "productivity points." Watch your Coding skill hit Level 8 and find yourself putting in that extra hour just to hit the next level. The same dopamine loop that kept you grinding for 40 hours in a game, now tracking what actually matters.`}
+            title="XP system & skill levelling"
+            body={`Every session earns you experience points tied to your real-life skill — not abstract "productivity points." Watch your Coding skill hit Level 8 and find yourself putting in that extra hour just to hit the next level. The same reward loop that kept you grinding for 40 hours in a game, now working for what actually matters.`}
           >
             {SkillBarsIllustration}
           </FeatureCard>
@@ -313,27 +313,27 @@ export default function FeaturesSection() {
           {/* Standard cards */}
           <FeatureCard
             tag="Time Tracking"
-            title="Earn XP For Real Practice"
+            title="Earn XP for real practice"
             body="Start a session and earn XP in the skill you are working on. The more time you put in, the closer you get to the next level."
             icon={GraphIcon}
             delayClass="reveal-delay-1"
           />
           <FeatureCard
             tag="Objectives"
-            title="Turn Goals Into Quests"
+            title="Turn goals into quests"
             body="Break larger goals into tasks and track each step towards completion."
             icon={QuestIcon}
             delayClass="reveal-delay-2"
           />
           <FeatureCard
             tag="Visualization"
-            title="See Where Your Time Goes"
+            title="See where your time goes"
             body="Review your sessions by skill, quest, day or week."
             icon={DashboardIcon}
           />
           <FeatureCard
             tag="Record"
-            title="Build A Record Of Your Progress"
+            title="Build a record of your progress"
             body="Keep a lasting history of the hours you have invested and the milestones you have reached."
             icon={LedgerIcon}
             delayClass="reveal-delay-1"

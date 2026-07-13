@@ -193,10 +193,10 @@ export default function ProblemSection() {
             style={{ fontSize: "clamp(1.65rem, 3.5vw, 2.65rem)" }}
           >
             Real
-            <em className="text-brand-primary italic"> Progress </em>
-            Can Be
-            <em className="text-brand-primary italic"> Difficult </em>
-            To See
+            <em className="text-brand-primary italic"> progress </em>
+            can be
+            <em className="text-brand-primary italic"> difficult </em>
+            to see
           </h2>
 
           {/* Lead */}
@@ -228,18 +228,18 @@ export default function ProblemSection() {
           >
             <PainCard
               icon={NoProgressIcon}
-              title="Your Effort Is Scattered"
+              title="Your effort is scattered"
               body="A timer records how long you worked. A task app records what you finished. Neither shows how those efforts add up within a skill. Skillorum brings your sessions, quests, tasks, XP and milestones into one clear record."
             />
             <PainCard
               icon={RobotAppsIcon}
-              title="Productivity Without Personality"
+              title="Productivity without personality"
               body="Most productivity tools are designed to record tasks, not make the work itself feel rewarding. Skillorum adds progression, personality and a reason to return."
               delayClass="reveal-delay-1"
             />
             <PainCard
               icon={TooManyGoalsIcon}
-              title="Too Many Goals, No Quest"
+              title="Too many goals, no quest"
               body="Coding, fitness, creative projects and language learning are difficult to manage as vague ambitions. Quests and tasks turn them into something you can act on and complete."
               delayClass="reveal-delay-2"
             />

@@ -159,9 +159,9 @@ export default function HowSection() {
             className="reveal font-display font-bold leading-[1.22] text-dark-ink"
             style={{ fontSize: "clamp(1.65rem, 3.5vw, 2.65rem)" }}
           >
-            Four Steps to{" "}
-            <em className="text-brand-primary italic">Start Levelling Up</em>{" "}
-            Today
+            Four steps to{" "}
+            <em className="text-brand-primary italic">start levelling up</em>{" "}
+            today
           </h2>
         </div>
 
