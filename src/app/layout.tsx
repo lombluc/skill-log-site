@@ -25,9 +25,9 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Skillorum — Turn Your Real Life Into an RPG",
+  title: "RPG Time Tracker for Real-Life Skills | Skillorum",
   description:
-    "Skillorum is the free RPG skill tracker that turns your real-life habits, quests, and tasks into XP. Level up your real skills. Track time. Stay motivated. Download free.",
+    "Track practice time, earn XP and level up your real-life skills with Skillorum, a free handcrafted RPG-style productivity app for iOS and Android.",
 };
 
 export default function RootLayout({

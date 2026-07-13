@@ -197,9 +197,9 @@ export default function HeroSection() {
           className="hero-headline font-display font-extrabold leading-[1.18] text-dark-ink max-w-200 mx-auto mb-6"
           style={{ fontSize: "clamp(2rem, 5vw, 4rem)" }}
         >
-          Turn Your Time Into
+          Level Up Your
           <span className="block text-brand-primary">
-            <em>Your</em> Progress
+            <em>Real-Life</em> Skills
           </span>
         </h1>
 
@@ -208,9 +208,9 @@ export default function HeroSection() {
           className="hero-sub font-body leading-[1.85] text-text-parchment max-w-145 mx-auto mb-10"
           style={{ fontSize: "clamp(1rem, 1.8vw, 1.15rem)" }}
         >
-          Skillorum is a free RPG-style time tracker that converts your real
-          habits, quests, and sessions into XP. Put in the work and watch
-          yourself level up.
+          Track the time you spend practising, studying or training. Skillorum
+          turns every session into XP, levels and a clear record of your
+          progress.
         </p>
 
         {/* ── Animated XP bar ── */}

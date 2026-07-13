@@ -13,7 +13,7 @@ export default function CtaSection() {
       <div className="max-w-section mx-auto px-8 py-24">
         {/* Eyebrow */}
         <span className="reveal block font-display text-[0.72rem] italic tracking-[0.22em] uppercase text-parchment-mid mb-3">
-          Your Quest Awaits
+          Start With One Skill
         </span>
 
         {/* Title */}

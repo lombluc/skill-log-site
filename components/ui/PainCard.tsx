@@ -3,7 +3,7 @@ interface PainCardProps {
   icon: React.ReactNode;
   title: string;
   body: string;
-  quote: string;
+  quote?: string;
   /** Additional reveal delay class, e.g. "reveal-delay-1" */
   delayClass?: string;
 }
@@ -36,15 +36,17 @@ export default function PainCard({
       </p>
 
       {/* Pull-quote strip */}
-      <blockquote
-        className="mt-5 pl-4 py-3 border-l-2 border-brand-primary rounded-r text-[0.85rem] italic"
-        style={{
-          background: "rgba(234,77,88,0.08)",
-          color: "rgba(242,221,176,0.52)",
-        }}
-      >
-        {quote}
-      </blockquote>
+      {quote && (
+        <blockquote
+          className="mt-5 pl-4 py-3 border-l-2 border-brand-primary rounded-r text-[0.85rem] italic"
+          style={{
+            background: "rgba(234,77,88,0.08)",
+            color: "rgba(242,221,176,0.52)",
+          }}
+        >
+          {quote}
+        </blockquote>
+      )}
     </div>
   );
 }

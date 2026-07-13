@@ -172,28 +172,28 @@ export default function HowSection() {
               num="I"
               icon={CreateSkillIcon}
               title="Create a Skill"
-              body={`Name anything you want to level up: "Guitar," "Coding," "Spanish," "Running." If it's worth your time, it's worth tracking.`}
+              body={`Create a skill you want to improve: "Guitar," "Coding," "Spanish," "Running." If it's worth your time, it's worth tracking.`}
               isFirst
             />
             <HowStep
               num="II"
               icon={StartTimerIcon}
               title="Start the Timer"
-              body="Tap once. The XP clock begins. Every minute you put in is real-life experience accumulating on your skill. Time becomes tangible."
+              body="Tap once. The timer starts and your session earns XP. Every minute adds XP to that skill. Time becomes tangible."
               delayClass="reveal-delay-1"
             />
             <HowStep
               num="III"
               icon={LevelUpIcon}
               title="Watch Yourself Level Up"
-              body="XP graphs, skill breakdowns, weekly dashboards. Watch your progress become undeniable. Stay motivated session after session."
+              body="XP graphs, skill breakdowns, weekly dashboards. See your XP and time worked increase each week. Stay motivated session after session."
               delayClass="reveal-delay-2"
             />
             <HowStep
               num="IV"
               icon={QuestsIcon}
               title="Complete Quests"
-              body="Turn goals into structured quests. Break big ambitions into tasks with clear progress. Turn you vague ambition into a quest log you're actually completing."
+              body="Turn goals into structured quests. Break big ambitions into tasks with clear progress. Turn your vague ambition into a quest log you're actually completing."
               delayClass="reveal-delay-3"
               isLast
             />
