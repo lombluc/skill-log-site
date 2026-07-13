@@ -284,16 +284,16 @@ export default function FeaturesSection() {
             className="reveal font-display font-bold leading-[1.22] text-dark-ink"
             style={{ fontSize: "clamp(1.65rem, 3.5vw, 2.65rem)" }}
           >
-            Every Tool You Need to{" "}
-            <em className="text-brand-primary italic">Level Up</em> For Real
+            A skill tracker built for{" "}
+            <em className="text-brand-primary italic">consistent</em> practice
           </h2>
 
           {/* Lead copy */}
           <p className="reveal text-[1.05rem] text-text-paper max-w-140 mt-6 mb-8">
-            Built for the productive gamer, the self-optimizer, the recovering
-            procrastinator. Whether you&apos;re studying, coding, training, or
-            building a creative skill from scratch — every feature is designed
-            to reward the effort of showing up.
+            Built for people who love the progression of games and want to apply
+            it to something real. Track coding, study, fitness, creative work or
+            any skill that improves through consistent practice. Designed to
+            reward the effort of showing up.
           </p>
         </div>
 
@@ -302,59 +302,41 @@ export default function FeaturesSection() {
           <FeatureCard
             variant="wide"
             tag="Core Mechanic"
-            title="XP System & Skill Leveling"
-            body={`Every session earns you experience points tied to your real-life skill — not abstract "productivity points." Watch your Coding skill hit Level 8 and find yourself putting in that extra hour just to hit the next level. The same dopamine loop that kept you grinding for 40 hours in a game, now tracking what actually matters.`}
+            title="XP system & skill levelling"
+            body={`Every session earns you experience points tied to your real-life skill — not abstract "productivity points." Watch your Coding skill hit Level 8 and find yourself putting in that extra hour just to hit the next level. The same reward loop that kept you grinding for 40 hours in a game, now working for what actually matters.`}
           >
             {SkillBarsIllustration}
           </FeatureCard>
         </div>
         {/* Features grid */}
-        <div
-          className="grid gap-6 section-padding-wide"
-          style={{
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-          }}
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 section-padding-mid">
           {/* Standard cards */}
           <FeatureCard
-            tag="Visualization"
-            title="Progress Graphs & Analytics"
-            body="XP charts, skill breakdowns, and quest-specific data. Stop guessing whether you're improving and see the proof in a graph. Your growth is no longer invisible."
+            tag="Time Tracking"
+            title="Earn XP for real practice"
+            body="Start a session and earn XP in the skill you are working on. The more time you put in, the closer you get to the next level."
             icon={GraphIcon}
-          />
-          <FeatureCard
-            tag="Precision"
-            title="Time Tracking"
-            body="Discover exactly where your hours go each day. Track time per skill, per quest, per session. Stop wondering why the week vanished — your personal ledger knows the answer."
-            icon={TimerIcon}
             delayClass="reveal-delay-1"
           />
           <FeatureCard
             tag="Objectives"
-            title="Quests & Task Creation"
-            body="Set your Quest, break it down into Tasks. Turn your ambitions into an RPG adventure and see how much easier it is to complete."
+            title="Turn goals into quests"
+            body="Break larger goals into tasks and track each step towards completion."
             icon={QuestIcon}
             delayClass="reveal-delay-2"
           />
           <FeatureCard
-            tag="Overview"
-            title="Weekly Dashboards"
-            body="A high-level view of every logged hour, task completed, every step forward across the week. See how you distributed your time across skills and quests. Own your story."
+            tag="Visualization"
+            title="See where your time goes"
+            body="Review your sessions by skill, quest, day or week."
             icon={DashboardIcon}
           />
           <FeatureCard
             tag="Record"
-            title="Personal Ledger"
-            body="A flexible log of every activity, every session, every achievement. Build a digital record of everything you've invested in yourself."
+            title="Build a record of your progress"
+            body="Keep a lasting history of the hours you have invested and the milestones you have reached."
             icon={LedgerIcon}
             delayClass="reveal-delay-1"
-          />
-          <FeatureCard
-            tag="Immersion"
-            title="Fantasy-Crafted UI"
-            body="Hand-drawn background, parchment and icons. This is the only app that looks like it came from an actual sketchbook, not a productivity app with a fantasy colour palette."
-            icon={UIIcon}
-            delayClass="reveal-delay-2"
           />
         </div>
       </div>
