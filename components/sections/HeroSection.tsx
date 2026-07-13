@@ -208,9 +208,9 @@ export default function HeroSection() {
           className="hero-sub font-body leading-[1.85] text-text-parchment max-w-145 mx-auto mb-10"
           style={{ fontSize: "clamp(1rem, 1.8vw, 1.15rem)" }}
         >
-          Track the time you spend practising, studying or training. Skillorum
-          turns every session into XP, levels and a clear record of your
-          progress.
+          Skillorum is a handcrafted RPG-style time tracker for practising,
+          studying and training. Every session earns XP, builds your skills and
+          creates a clear record of your progress.
         </p>
 
         {/* ── Animated XP bar ── */}

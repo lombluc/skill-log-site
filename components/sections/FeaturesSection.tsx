@@ -284,17 +284,16 @@ export default function FeaturesSection() {
             className="reveal font-display font-bold leading-[1.22] text-dark-ink"
             style={{ fontSize: "clamp(1.65rem, 3.5vw, 2.65rem)" }}
           >
-            Everything You Need to{" "}
-            <em className="text-brand-primary italic">Track</em> a Skill For
-            Real
+            A Skill Tracker Built For{" "}
+            <em className="text-brand-primary italic">Consistent</em> Practice
           </h2>
 
           {/* Lead copy */}
           <p className="reveal text-[1.05rem] text-text-paper max-w-140 mt-6 mb-8">
-            Built for the productive gamer, the self-optimizer, the recovering
-            procrastinator. Whether you&apos;re studying, coding, training, or
-            building a creative skill from scratch — every feature is designed
-            to reward the effort of showing up.
+            Built for people who love the progression of games and want to apply
+            it to something real. Track coding, study, fitness, creative work or
+            any skill that improves through consistent practice. Designed to
+            reward the effort of showing up.
           </p>
         </div>
 

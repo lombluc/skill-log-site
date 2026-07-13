@@ -42,7 +42,7 @@ export default function CtaSection() {
             href="#"
             className="font-display text-[0.88rem] font-bold tracking-[0.06em] uppercase bg-parchment-light text-dark-ink px-[2.2rem] py-4 rounded no-underline shadow-[0_4px_20px_rgba(0,0,0,0.2)] transition-[background,transform] duration-200 hover:bg-cloud-light hover:-translate-y-0.5"
           >
-            ↓ Download Now
+            ↓ Start Tracking Your First Skill
           </a>
         </div>
 

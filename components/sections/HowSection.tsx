@@ -186,14 +186,14 @@ export default function HowSection() {
               num="III"
               icon={LevelUpIcon}
               title="Watch Yourself Level Up"
-              body="XP graphs, skill breakdowns, weekly dashboards. See your XP and time worked increase each week. Stay motivated session after session."
+              body="XP graphs, skill breakdowns, weekly dashboards. See your XP, practice time and skill levels increase each week. Stay motivated session after session."
               delayClass="reveal-delay-2"
             />
             <HowStep
               num="IV"
               icon={QuestsIcon}
               title="Complete Quests"
-              body="Turn goals into structured quests. Break big ambitions into tasks with clear progress. Turn your vague ambition into a quest log you're actually completing."
+              body="Turn larger goals into quests, break them into manageable tasks and track your progress towards completion."
               delayClass="reveal-delay-3"
               isLast
             />

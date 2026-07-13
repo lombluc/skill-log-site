@@ -204,7 +204,7 @@ export default function ProblemSection() {
             className="reveal text-[1.05rem] max-w-145 mt-6"
             style={{ color: "rgba(242, 221, 176, 0.72)" }}
           >
-            You practise, study and train, but individual sessions are easy to
+            You practice, study and train, but individual sessions are easy to
             forget. Without a record, six months of consistent effort can feel
             like very little.
           </p>
@@ -213,8 +213,8 @@ export default function ProblemSection() {
             style={{ color: "rgba(242, 221, 176, 0.72)" }}
           >
             Most productivity tools record tasks without making the work feel
-            rewarding. Skillorum gives that effort a visible structure:
-            skills, sessions, XP, levels and quests.
+            rewarding. Skillorum gives that effort a visible structure: skills,
+            sessions, XP, levels and quests.
           </p>
         </div>
 
@@ -228,19 +228,19 @@ export default function ProblemSection() {
           >
             <PainCard
               icon={NoProgressIcon}
-              title="No Visible Progress"
-              body="You practice, but do you improve? Without a record, every session disappears into the void. Six months later, you're demoralized because you can't see how far you've come."
+              title="Your Effort Is Scattered"
+              body="A timer records how long you worked. A task app records what you finished. Neither shows how those efforts add up within a skill. Skillorum brings your sessions, quests, tasks, XP and milestones into one clear record."
             />
             <PainCard
               icon={RobotAppsIcon}
-              title="Apps Built for Robots"
-              body="Every productivity tool feels like an accountant's spreadsheet. There's no joy or narrative, no reward for doing the work. You open it, feel nothing, and close it."
+              title="Productivity Without Personality"
+              body="Most productivity tools are designed to record tasks, not make the work itself feel rewarding. Skillorum adds progression, personality and a reason to return."
               delayClass="reveal-delay-1"
             />
             <PainCard
               icon={TooManyGoalsIcon}
               title="Too Many Goals, No Quest"
-              body="You have ambitions: coding, fitness, a side project, a language. But they sit in your head, formless. Without structure, big goals stay wishes. And wishes don't get completed."
+              body="Coding, fitness, creative projects and language learning are difficult to manage as vague ambitions. Quests and tasks turn them into something you can act on and complete."
               delayClass="reveal-delay-2"
             />
           </div>
