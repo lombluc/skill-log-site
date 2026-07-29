@@ -3,6 +3,9 @@ import BasePage from "./BasePage";
 import ReactMarkdown from "react-markdown";
 import type { Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import "katex/dist/katex.min.css";
 
 type Props = {
   markdown: string;
@@ -81,7 +84,8 @@ const MarkdownPage = ({ markdown, headerSlot }: Props) => {
         <div className="max-w-4xl mx-auto bg-[#FFFCF5] border border-parchment-mid/25 shadow-[0_4px_24px_rgba(92,61,30,0.1)] rounded-xl px-8 md:px-12 py-12">
           {headerSlot}
           <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
+            remarkPlugins={[remarkGfm, remarkMath]}
+            rehypePlugins={[rehypeKatex]}
             components={TailwindComponents}
           >
             {markdown}
