@@ -1,5 +1,5 @@
 ---
-title: "How Skillorum Turns Master Into an XP Curve"
+title: "How Skillorum Turns Mastery Into an XP Curve"
 date: "2026-07-29"
 description: "I researched how video game skills match up to real life mastery to balance Skillorum."
 tags: ["gamification", "skill-building"]
